@@ -1,3 +1,6 @@
 [submodule "CGPhoto/CG_CGKit"]
 	path = CGPhoto/CG_CGKit
 	url = git@github.com:root338/CG_CGKit.git
+[submodule "CGPhoto/CGSwiftKit"]
+	path = CGPhoto/CGSwiftKit
+	url = git@github.com:root338/CGSwiftKit.git

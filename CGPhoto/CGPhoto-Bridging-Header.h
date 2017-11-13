@@ -10,5 +10,8 @@
 #define CGPhoto_Bridging_Header_h
 
 #import "CGKit+SwiftBridgingHeader.h"
+#import "CGSwiftKit-Bridging-Header.h"
+
+#import "UIImage+CGScaleImageSize.h"
 
 #endif /* CGPhoto_Bridging_Header_h */

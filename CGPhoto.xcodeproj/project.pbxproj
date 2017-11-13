@@ -9,18 +9,11 @@
 /* Begin PBXBuildFile section */
 		007401801FB93ACD0042F460 /* CGTitlesSourceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE1A1FB93ACA0042F460 /* CGTitlesSourceDataModel.m */; };
 		007401821FB93ACD0042F460 /* CGWebViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE1D1FB93ACA0042F460 /* CGWebViewConfig.m */; };
-		007401831FB93ACD0042F460 /* UIImage+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE241FB93ACA0042F460 /* UIImage+CGImage.m */; };
-		007401841FB93ACD0042F460 /* UIImage+CGResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE251FB93ACA0042F460 /* UIImage+CGResizableImage.m */; };
-		007401851FB93ACD0042F460 /* UIImage+CGDrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE271FB93ACA0042F460 /* UIImage+CGDrawImage.m */; };
-		007401861FB93ACD0042F460 /* UIImage+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE2B1FB93ACB0042F460 /* UIImage+CGColor.m */; };
-		007401871FB93ACD0042F460 /* UIImage+CGImageRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE2D1FB93ACB0042F460 /* UIImage+CGImageRotate.m */; };
-		007401881FB93ACD0042F460 /* UIImage+CGScaleImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE2E1FB93ACB0042F460 /* UIImage+CGScaleImageSize.m */; };
 		007401891FB93ACD0042F460 /* CGArrowIconConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE341FB93ACB0042F460 /* CGArrowIconConfig.m */; };
 		0074018A1FB93ACD0042F460 /* CGIconConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE381FB93ACB0042F460 /* CGIconConfig.m */; };
 		0074018B1FB93ACD0042F460 /* CGCloseIconConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE391FB93ACB0042F460 /* CGCloseIconConfig.m */; };
 		0074018C1FB93ACD0042F460 /* CGRefreshIconConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE3A1FB93ACB0042F460 /* CGRefreshIconConfig.m */; };
 		0074018D1FB93ACD0042F460 /* UIImage+CGDrawIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE3B1FB93ACB0042F460 /* UIImage+CGDrawIcon.m */; };
-		0074018E1FB93ACD0042F460 /* UIImage+CGLoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE3D1FB93ACB0042F460 /* UIImage+CGLoadImage.m */; };
 		0074018F1FB93ACD0042F460 /* UIApplication+CGVerificationRemoteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE3F1FB93ACB0042F460 /* UIApplication+CGVerificationRemoteNotification.m */; };
 		007401901FB93ACD0042F460 /* UIApplication+CGVerifyDeviceDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE401FB93ACB0042F460 /* UIApplication+CGVerifyDeviceDirection.m */; };
 		007401911FB93ACD0042F460 /* UIColor+ColorValueTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE461FB93ACB0042F460 /* UIColor+ColorValueTransform.m */; };
@@ -301,6 +294,36 @@
 		007402A61FB93ACF0042F460 /* CGNavigationDelegateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 007401731FB93ACD0042F460 /* CGNavigationDelegateObject.m */; };
 		007402A71FB93ACF0042F460 /* CGDefaultPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 007401781FB93ACD0042F460 /* CGDefaultPopAnimation.m */; };
 		007402A81FB93ACF0042F460 /* CGNavigationViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074017A1FB93ACD0042F460 /* CGNavigationViewControllerManager.m */; };
+		007402E41FB976360042F460 /* CGMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402B91FB976360042F460 /* CGMapManager.swift */; };
+		007402E51FB976360042F460 /* CGLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402BA1FB976360042F460 /* CGLocationManager.swift */; };
+		007402E61FB976360042F460 /* CGURLSessionManagerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402BD1FB976360042F460 /* CGURLSessionManagerConfiguration.swift */; };
+		007402E71FB976360042F460 /* CGURLSessionTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402BF1FB976360042F460 /* CGURLSessionTaskDelegate.swift */; };
+		007402E81FB976360042F460 /* CGURLTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402C11FB976360042F460 /* CGURLTaskManager.swift */; };
+		007402E91FB976360042F460 /* CGURLSessionDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402C21FB976360042F460 /* CGURLSessionDelegateManager.swift */; };
+		007402EA1FB976360042F460 /* CGURLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402C31FB976360042F460 /* CGURLSessionManager.swift */; };
+		007402EB1FB976360042F460 /* CGURLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402C51FB976360042F460 /* CGURLSessionType.swift */; };
+		007402EC1FB976360042F460 /* CGUploadImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402C81FB976360042F460 /* CGUploadImageModel.swift */; };
+		007402ED1FB976360042F460 /* CGTaskRequestDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402C91FB976360042F460 /* CGTaskRequestDataModel.swift */; };
+		007402EE1FB976360042F460 /* CGRequestCallbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402CA1FB976360042F460 /* CGRequestCallbackModel.swift */; };
+		007402EF1FB976360042F460 /* CGTaskDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402CC1FB976360042F460 /* CGTaskDataModel.swift */; };
+		007402F11FB976360042F460 /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402D01FB976360042F460 /* CGImageExtension.swift */; };
+		007402F21FB976360042F460 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402D21FB976360042F460 /* CGPointExtension.swift */; };
+		007402F31FB976360042F460 /* CGNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402D41FB976360042F460 /* CGNumberExtension.swift */; };
+		007402F41FB976360042F460 /* CGDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402D61FB976360042F460 /* CGDictionaryExtension.swift */; };
+		007402F51FB976360042F460 /* CGStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402D81FB976360042F460 /* CGStringExtension.swift */; };
+		007402F61FB976360042F460 /* CGImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402DA1FB976360042F460 /* CGImageDataModel.swift */; };
+		007402F71FB976360042F460 /* CGBrowseFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402DE1FB976360042F460 /* CGBrowseFullScreenView.swift */; };
+		007402F81FB976360042F460 /* CGBrowseFullScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402DF1FB976360042F460 /* CGBrowseFullScreenViewCell.swift */; };
+		007402F91FB976360042F460 /* CGBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402E01FB976360042F460 /* CGBrowseView.swift */; };
+		007402FA1FB976360042F460 /* CGBrowseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402E11FB976360042F460 /* CGBrowseViewCell.swift */; };
+		007402FB1FB976360042F460 /* CGFoulLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007402E31FB976360042F460 /* CGFoulLineView.swift */; };
+		0074030C1FB9817F0042F460 /* UIImage+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 007402FE1FB9817A0042F460 /* UIImage+CGColor.m */; };
+		0074030D1FB9817F0042F460 /* UIImage+CGDrawImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403001FB9817A0042F460 /* UIImage+CGDrawImage.m */; };
+		0074030E1FB9817F0042F460 /* UIImage+CGResizableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403031FB9817B0042F460 /* UIImage+CGResizableImage.m */; };
+		0074030F1FB9817F0042F460 /* UIImage+CGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403051FB9817C0042F460 /* UIImage+CGImage.m */; };
+		007403101FB9817F0042F460 /* UIImage+CGImageRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403071FB9817D0042F460 /* UIImage+CGImageRotate.m */; };
+		007403111FB9817F0042F460 /* UIImage+CGScaleImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403081FB9817D0042F460 /* UIImage+CGScaleImageSize.m */; };
+		007403121FB9817F0042F460 /* UIImage+CGLoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074030A1FB9817E0042F460 /* UIImage+CGLoadImage.m */; };
 		0074FE121FB9351D0042F460 /* MLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE111FB9351D0042F460 /* MLImageView.swift */; };
 		0074FE141FB939DB0042F460 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0074FE131FB939DA0042F460 /* 1.jpg */; };
 		008253CE1FB5A7CB00AE3152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008253CD1FB5A7CB00AE3152 /* AppDelegate.swift */; };
@@ -620,6 +643,46 @@
 		0074017D1FB93ACD0042F460 /* CGDefaultPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDefaultPopAnimation.h; sourceTree = "<group>"; };
 		0074017F1FB93ACD0042F460 /* CGView+CalculateArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGView+CalculateArea.h"; sourceTree = "<group>"; };
 		007402AC1FB94AAF0042F460 /* CGPhoto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGPhoto-Bridging-Header.h"; sourceTree = "<group>"; };
+		007402B71FB976360042F460 /* CGSwiftKit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGSwiftKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		007402B91FB976360042F460 /* CGMapManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGMapManager.swift; sourceTree = "<group>"; };
+		007402BA1FB976360042F460 /* CGLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGLocationManager.swift; sourceTree = "<group>"; };
+		007402BD1FB976360042F460 /* CGURLSessionManagerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGURLSessionManagerConfiguration.swift; sourceTree = "<group>"; };
+		007402BF1FB976360042F460 /* CGURLSessionTaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGURLSessionTaskDelegate.swift; sourceTree = "<group>"; };
+		007402C11FB976360042F460 /* CGURLTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGURLTaskManager.swift; sourceTree = "<group>"; };
+		007402C21FB976360042F460 /* CGURLSessionDelegateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGURLSessionDelegateManager.swift; sourceTree = "<group>"; };
+		007402C31FB976360042F460 /* CGURLSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGURLSessionManager.swift; sourceTree = "<group>"; };
+		007402C51FB976360042F460 /* CGURLSessionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGURLSessionType.swift; sourceTree = "<group>"; };
+		007402C81FB976360042F460 /* CGUploadImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGUploadImageModel.swift; sourceTree = "<group>"; };
+		007402C91FB976360042F460 /* CGTaskRequestDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGTaskRequestDataModel.swift; sourceTree = "<group>"; };
+		007402CA1FB976360042F460 /* CGRequestCallbackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRequestCallbackModel.swift; sourceTree = "<group>"; };
+		007402CC1FB976360042F460 /* CGTaskDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGTaskDataModel.swift; sourceTree = "<group>"; };
+		007402D01FB976360042F460 /* CGImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		007402D21FB976360042F460 /* CGPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
+		007402D41FB976360042F460 /* CGNumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGNumberExtension.swift; sourceTree = "<group>"; };
+		007402D61FB976360042F460 /* CGDictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGDictionaryExtension.swift; sourceTree = "<group>"; };
+		007402D81FB976360042F460 /* CGStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGStringExtension.swift; sourceTree = "<group>"; };
+		007402DA1FB976360042F460 /* CGImageDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageDataModel.swift; sourceTree = "<group>"; };
+		007402DE1FB976360042F460 /* CGBrowseFullScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGBrowseFullScreenView.swift; sourceTree = "<group>"; };
+		007402DF1FB976360042F460 /* CGBrowseFullScreenViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGBrowseFullScreenViewCell.swift; sourceTree = "<group>"; };
+		007402E01FB976360042F460 /* CGBrowseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGBrowseView.swift; sourceTree = "<group>"; };
+		007402E11FB976360042F460 /* CGBrowseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGBrowseViewCell.swift; sourceTree = "<group>"; };
+		007402E31FB976360042F460 /* CGFoulLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFoulLineView.swift; sourceTree = "<group>"; };
+		007402FC1FB981790042F460 /* UIImage+CGImageRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGImageRotate.h"; sourceTree = "<group>"; };
+		007402FD1FB981790042F460 /* UIImage+CGScaleImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGScaleImageSize.h"; sourceTree = "<group>"; };
+		007402FE1FB9817A0042F460 /* UIImage+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGColor.m"; sourceTree = "<group>"; };
+		007402FF1FB9817A0042F460 /* UIImage+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGColor.h"; sourceTree = "<group>"; };
+		007403001FB9817A0042F460 /* UIImage+CGDrawImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGDrawImage.m"; sourceTree = "<group>"; };
+		007403011FB9817A0042F460 /* UIImage+CGResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGResizableImage.h"; sourceTree = "<group>"; };
+		007403021FB9817B0042F460 /* CGImage+CategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+CategoryHeader.h"; sourceTree = "<group>"; };
+		007403031FB9817B0042F460 /* UIImage+CGResizableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGResizableImage.m"; sourceTree = "<group>"; };
+		007403041FB9817B0042F460 /* CGScaleImageTypeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGScaleImageTypeHeader.h; sourceTree = "<group>"; };
+		007403051FB9817C0042F460 /* UIImage+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGImage.m"; sourceTree = "<group>"; };
+		007403061FB9817C0042F460 /* UIImage+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGImage.h"; sourceTree = "<group>"; };
+		007403071FB9817D0042F460 /* UIImage+CGImageRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGImageRotate.m"; sourceTree = "<group>"; };
+		007403081FB9817D0042F460 /* UIImage+CGScaleImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGScaleImageSize.m"; sourceTree = "<group>"; };
+		007403091FB9817D0042F460 /* UIImage+CGLoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGLoadImage.h"; sourceTree = "<group>"; };
+		0074030A1FB9817E0042F460 /* UIImage+CGLoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGLoadImage.m"; sourceTree = "<group>"; };
+		0074030B1FB9817E0042F460 /* UIImage+CGDrawImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGDrawImage.h"; sourceTree = "<group>"; };
 		0074FE111FB9351D0042F460 /* MLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLImageView.swift; sourceTree = "<group>"; };
 		0074FE131FB939DA0042F460 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		0074FE161FB93ACA0042F460 /* CG_CGKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_CGKit.h; sourceTree = "<group>"; };
@@ -627,21 +690,6 @@
 		0074FE1A1FB93ACA0042F460 /* CGTitlesSourceDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGTitlesSourceDataModel.m; sourceTree = "<group>"; };
 		0074FE1D1FB93ACA0042F460 /* CGWebViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGWebViewConfig.m; sourceTree = "<group>"; };
 		0074FE1E1FB93ACA0042F460 /* CGWebViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGWebViewConfig.h; sourceTree = "<group>"; };
-		0074FE221FB93ACA0042F460 /* UIImage+CGImageRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGImageRotate.h"; sourceTree = "<group>"; };
-		0074FE231FB93ACA0042F460 /* UIImage+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGColor.h"; sourceTree = "<group>"; };
-		0074FE241FB93ACA0042F460 /* UIImage+CGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGImage.m"; sourceTree = "<group>"; };
-		0074FE251FB93ACA0042F460 /* UIImage+CGResizableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGResizableImage.m"; sourceTree = "<group>"; };
-		0074FE261FB93ACA0042F460 /* UIImage+CGScaleImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGScaleImageSize.h"; sourceTree = "<group>"; };
-		0074FE271FB93ACA0042F460 /* UIImage+CGDrawImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGDrawImage.m"; sourceTree = "<group>"; };
-		0074FE281FB93ACA0042F460 /* UIImage+CGLoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGLoadImage.h"; sourceTree = "<group>"; };
-		0074FE291FB93ACA0042F460 /* UIImage+CGResizableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGResizableImage.h"; sourceTree = "<group>"; };
-		0074FE2A1FB93ACA0042F460 /* UIImage+CGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGImage.h"; sourceTree = "<group>"; };
-		0074FE2B1FB93ACB0042F460 /* UIImage+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGColor.m"; sourceTree = "<group>"; };
-		0074FE2C1FB93ACB0042F460 /* CGScaleImageTypeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGScaleImageTypeHeader.h; sourceTree = "<group>"; };
-		0074FE2D1FB93ACB0042F460 /* UIImage+CGImageRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGImageRotate.m"; sourceTree = "<group>"; };
-		0074FE2E1FB93ACB0042F460 /* UIImage+CGScaleImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGScaleImageSize.m"; sourceTree = "<group>"; };
-		0074FE2F1FB93ACB0042F460 /* CGImage+CategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGImage+CategoryHeader.h"; sourceTree = "<group>"; };
-		0074FE301FB93ACB0042F460 /* UIImage+CGDrawImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGDrawImage.h"; sourceTree = "<group>"; };
 		0074FE331FB93ACB0042F460 /* CGIconConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGIconConfig.h; sourceTree = "<group>"; };
 		0074FE341FB93ACB0042F460 /* CGArrowIconConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGArrowIconConfig.m; sourceTree = "<group>"; };
 		0074FE351FB93ACB0042F460 /* CGCloseIconConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCloseIconConfig.h; sourceTree = "<group>"; };
@@ -652,7 +700,6 @@
 		0074FE3A1FB93ACB0042F460 /* CGRefreshIconConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGRefreshIconConfig.m; sourceTree = "<group>"; };
 		0074FE3B1FB93ACB0042F460 /* UIImage+CGDrawIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGDrawIcon.m"; sourceTree = "<group>"; };
 		0074FE3C1FB93ACB0042F460 /* UIImage+CGDrawIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGDrawIcon.h"; sourceTree = "<group>"; };
-		0074FE3D1FB93ACB0042F460 /* UIImage+CGLoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGLoadImage.m"; sourceTree = "<group>"; };
 		0074FE3F1FB93ACB0042F460 /* UIApplication+CGVerificationRemoteNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CGVerificationRemoteNotification.m"; sourceTree = "<group>"; };
 		0074FE401FB93ACB0042F460 /* UIApplication+CGVerifyDeviceDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CGVerifyDeviceDirection.m"; sourceTree = "<group>"; };
 		0074FE411FB93ACB0042F460 /* UIApplication+CGVerificationRemoteNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CGVerificationRemoteNotification.h"; sourceTree = "<group>"; };
@@ -2060,6 +2107,205 @@
 			path = HeaderFile;
 			sourceTree = "<group>";
 		};
+		007402B51FB976360042F460 /* CGSwiftKit */ = {
+			isa = PBXGroup;
+			children = (
+				007402B61FB976360042F460 /* BridgingHeader */,
+				007402B81FB976360042F460 /* CGMapManager */,
+				007402BB1FB976360042F460 /* URLRequestManager */,
+				007402CE1FB976360042F460 /* Foundion */,
+				007402D91FB976360042F460 /* Model */,
+				007402DB1FB976360042F460 /* View */,
+			);
+			path = CGSwiftKit;
+			sourceTree = "<group>";
+		};
+		007402B61FB976360042F460 /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				007402B71FB976360042F460 /* CGSwiftKit-Bridging-Header.h */,
+			);
+			path = BridgingHeader;
+			sourceTree = "<group>";
+		};
+		007402B81FB976360042F460 /* CGMapManager */ = {
+			isa = PBXGroup;
+			children = (
+				007402B91FB976360042F460 /* CGMapManager.swift */,
+				007402BA1FB976360042F460 /* CGLocationManager.swift */,
+			);
+			path = CGMapManager;
+			sourceTree = "<group>";
+		};
+		007402BB1FB976360042F460 /* URLRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				007402BC1FB976360042F460 /* Configuration */,
+				007402BE1FB976360042F460 /* Protocol */,
+				007402C01FB976360042F460 /* Manager */,
+				007402C41FB976360042F460 /* Type */,
+				007402C61FB976360042F460 /* DataModel */,
+			);
+			path = URLRequestManager;
+			sourceTree = "<group>";
+		};
+		007402BC1FB976360042F460 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				007402BD1FB976360042F460 /* CGURLSessionManagerConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		007402BE1FB976360042F460 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				007402BF1FB976360042F460 /* CGURLSessionTaskDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		007402C01FB976360042F460 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				007402C11FB976360042F460 /* CGURLTaskManager.swift */,
+				007402C21FB976360042F460 /* CGURLSessionDelegateManager.swift */,
+				007402C31FB976360042F460 /* CGURLSessionManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		007402C41FB976360042F460 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				007402C51FB976360042F460 /* CGURLSessionType.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		007402C61FB976360042F460 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				007402C71FB976360042F460 /* RequestModel */,
+				007402CB1FB976360042F460 /* ResponseModel */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		007402C71FB976360042F460 /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				007402C81FB976360042F460 /* CGUploadImageModel.swift */,
+				007402C91FB976360042F460 /* CGTaskRequestDataModel.swift */,
+				007402CA1FB976360042F460 /* CGRequestCallbackModel.swift */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		007402CB1FB976360042F460 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				007402CC1FB976360042F460 /* CGTaskDataModel.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		007402CE1FB976360042F460 /* Foundion */ = {
+			isa = PBXGroup;
+			children = (
+				007402CF1FB976360042F460 /* UIImage */,
+				007402D11FB976360042F460 /* AreaLocation */,
+				007402D31FB976360042F460 /* Number */,
+				007402D51FB976360042F460 /* Dictionary */,
+				007402D71FB976360042F460 /* String */,
+			);
+			path = Foundion;
+			sourceTree = "<group>";
+		};
+		007402CF1FB976360042F460 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				007402D01FB976360042F460 /* CGImageExtension.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		007402D11FB976360042F460 /* AreaLocation */ = {
+			isa = PBXGroup;
+			children = (
+				007402D21FB976360042F460 /* CGPointExtension.swift */,
+			);
+			path = AreaLocation;
+			sourceTree = "<group>";
+		};
+		007402D31FB976360042F460 /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				007402D41FB976360042F460 /* CGNumberExtension.swift */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		007402D51FB976360042F460 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				007402D61FB976360042F460 /* CGDictionaryExtension.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		007402D71FB976360042F460 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				007402D81FB976360042F460 /* CGStringExtension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		007402D91FB976360042F460 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				007402DA1FB976360042F460 /* CGImageDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		007402DB1FB976360042F460 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				007402DC1FB976360042F460 /* UIView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		007402DC1FB976360042F460 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				007402DD1FB976360042F460 /* BrowseView */,
+				007402E21FB976360042F460 /* LineView */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		007402DD1FB976360042F460 /* BrowseView */ = {
+			isa = PBXGroup;
+			children = (
+				007402DE1FB976360042F460 /* CGBrowseFullScreenView.swift */,
+				007402DF1FB976360042F460 /* CGBrowseFullScreenViewCell.swift */,
+				007402E01FB976360042F460 /* CGBrowseView.swift */,
+				007402E11FB976360042F460 /* CGBrowseViewCell.swift */,
+			);
+			path = BrowseView;
+			sourceTree = "<group>";
+		};
+		007402E21FB976360042F460 /* LineView */ = {
+			isa = PBXGroup;
+			children = (
+				007402E31FB976360042F460 /* CGFoulLineView.swift */,
+			);
+			path = LineView;
+			sourceTree = "<group>";
+		};
 		0074FE101FB934EB0042F460 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -2142,23 +2388,23 @@
 		0074FE211FB93ACA0042F460 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				0074FE221FB93ACA0042F460 /* UIImage+CGImageRotate.h */,
-				0074FE231FB93ACA0042F460 /* UIImage+CGColor.h */,
-				0074FE241FB93ACA0042F460 /* UIImage+CGImage.m */,
-				0074FE251FB93ACA0042F460 /* UIImage+CGResizableImage.m */,
-				0074FE261FB93ACA0042F460 /* UIImage+CGScaleImageSize.h */,
-				0074FE271FB93ACA0042F460 /* UIImage+CGDrawImage.m */,
-				0074FE281FB93ACA0042F460 /* UIImage+CGLoadImage.h */,
-				0074FE291FB93ACA0042F460 /* UIImage+CGResizableImage.h */,
-				0074FE2A1FB93ACA0042F460 /* UIImage+CGImage.h */,
-				0074FE2B1FB93ACB0042F460 /* UIImage+CGColor.m */,
-				0074FE2C1FB93ACB0042F460 /* CGScaleImageTypeHeader.h */,
-				0074FE2D1FB93ACB0042F460 /* UIImage+CGImageRotate.m */,
-				0074FE2E1FB93ACB0042F460 /* UIImage+CGScaleImageSize.m */,
-				0074FE2F1FB93ACB0042F460 /* CGImage+CategoryHeader.h */,
-				0074FE301FB93ACB0042F460 /* UIImage+CGDrawImage.h */,
+				007403021FB9817B0042F460 /* CGImage+CategoryHeader.h */,
+				007403041FB9817B0042F460 /* CGScaleImageTypeHeader.h */,
+				007402FF1FB9817A0042F460 /* UIImage+CGColor.h */,
+				007402FE1FB9817A0042F460 /* UIImage+CGColor.m */,
+				0074030B1FB9817E0042F460 /* UIImage+CGDrawImage.h */,
+				007403001FB9817A0042F460 /* UIImage+CGDrawImage.m */,
+				007403061FB9817C0042F460 /* UIImage+CGImage.h */,
+				007403051FB9817C0042F460 /* UIImage+CGImage.m */,
+				007402FC1FB981790042F460 /* UIImage+CGImageRotate.h */,
+				007403071FB9817D0042F460 /* UIImage+CGImageRotate.m */,
+				007403091FB9817D0042F460 /* UIImage+CGLoadImage.h */,
+				0074030A1FB9817E0042F460 /* UIImage+CGLoadImage.m */,
+				007403011FB9817A0042F460 /* UIImage+CGResizableImage.h */,
+				007403031FB9817B0042F460 /* UIImage+CGResizableImage.m */,
+				007402FD1FB981790042F460 /* UIImage+CGScaleImageSize.h */,
+				007403081FB9817D0042F460 /* UIImage+CGScaleImageSize.m */,
 				0074FE311FB93ACB0042F460 /* DrawIcon */,
-				0074FE3D1FB93ACB0042F460 /* UIImage+CGLoadImage.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -3520,6 +3766,7 @@
 		008253C11FB5A7CB00AE3152 = {
 			isa = PBXGroup;
 			children = (
+				007402B51FB976360042F460 /* CGSwiftKit */,
 				0074FE151FB93ACA0042F460 /* CG_CGKit */,
 				0074FE131FB939DA0042F460 /* 1.jpg */,
 				008253CC1FB5A7CB00AE3152 /* CGPhoto */,
@@ -3738,23 +3985,25 @@
 				007401B31FB93ACE0042F460 /* EXTScope.m in Sources */,
 				007401C71FB93ACE0042F460 /* NSArray+CGArray.m in Sources */,
 				007401DA1FB93ACE0042F460 /* UINavigationBar+CGSetupAppearance.m in Sources */,
+				007402EE1FB976360042F460 /* CGRequestCallbackModel.swift in Sources */,
 				0074026D1FB93ACF0042F460 /* CGTitleButtonView.m in Sources */,
 				007401D31FB93ACE0042F460 /* CGHandleRequestData.m in Sources */,
 				0074022F1FB93ACE0042F460 /* CGSingleSectionBaseTableViewCell.m in Sources */,
 				007402091FB93ACE0042F460 /* UIView+CGCreate.m in Sources */,
 				007401BB1FB93ACE0042F460 /* CGTimeManager.m in Sources */,
+				007402F81FB976360042F460 /* CGBrowseFullScreenViewCell.swift in Sources */,
 				007401DB1FB93ACE0042F460 /* UIScrollView+CGPullToRefresh.m in Sources */,
 				007402031FB93ACE0042F460 /* UILabel+CGCreateLayoutCustomLabel.m in Sources */,
 				0074026C1FB93ACF0042F460 /* CGTitleTextView.m in Sources */,
 				007402541FB93ACF0042F460 /* CGTitleBaseView.m in Sources */,
 				007402641FB93ACF0042F460 /* CGTitleRadioView.m in Sources */,
+				007402F41FB976360042F460 /* CGDictionaryExtension.swift in Sources */,
 				007402281FB93ACE0042F460 /* CGRefreshBaseView.m in Sources */,
 				007401B91FB93ACE0042F460 /* CGKeyboardManager.m in Sources */,
 				0074023B1FB93ACE0042F460 /* CGWebViewTool.m in Sources */,
 				007401F71FB93ACE0042F460 /* UIView+CGSetupInteractivePopGestureRecognizerForNavigationController.m in Sources */,
 				0074019E1FB93ACD0042F460 /* CGSemicircleLabel.swift in Sources */,
 				008254031FB5B27B00AE3152 /* CGAssetCollectionModel.swift in Sources */,
-				007401881FB93ACD0042F460 /* UIImage+CGScaleImageSize.m in Sources */,
 				007401E71FB93ACE0042F460 /* UIView+LoadXIBFile.m in Sources */,
 				0074019C1FB93ACD0042F460 /* CGAssetsLibraryManager.m in Sources */,
 				007402291FB93ACE0042F460 /* CGInputTextView.m in Sources */,
@@ -3769,11 +4018,13 @@
 				0074020B1FB93ACE0042F460 /* UIButton+CGCreateCustomButton.m in Sources */,
 				007401931FB93ACD0042F460 /* UIDevice+CGSetupDevicePrivateProperty.m in Sources */,
 				0074024D1FB93ACE0042F460 /* CGHighlightBgButton.m in Sources */,
+				007402FA1FB976360042F460 /* CGBrowseViewCell.swift in Sources */,
 				007401FA1FB93ACE0042F460 /* UITableView+CGIndexPath.m in Sources */,
 				007402851FB93ACF0042F460 /* CGUpdateSubviewsFlowLayoutConfigModel.m in Sources */,
 				007402841FB93ACF0042F460 /* CGBaseSubviewsFlowLayoutConfigModel.m in Sources */,
 				007402381FB93ACE0042F460 /* CGWKWebViewUIDelegateManager.m in Sources */,
 				007402301FB93ACE0042F460 /* HorizontalSingleAppearance.m in Sources */,
+				007402E71FB976360042F460 /* CGURLSessionTaskDelegate.swift in Sources */,
 				0074021E1FB93ACE0042F460 /* UIView+CGAddConstraintStatus.m in Sources */,
 				007401EE1FB93ACE0042F460 /* UIView+CGAnimated.m in Sources */,
 				007401DD1FB93ACE0042F460 /* UIScrollView+CGSetupAppearance.m in Sources */,
@@ -3784,8 +4035,10 @@
 				007401FD1FB93ACE0042F460 /* UITableView+CGChangeGroupStyle.m in Sources */,
 				007401981FB93ACD0042F460 /* CTTelephonyNetworkInfo+CGGetIMSI.m in Sources */,
 				0074021F1FB93ACE0042F460 /* CGBorderBaseLayer.m in Sources */,
+				007402F91FB976360042F460 /* CGBrowseView.swift in Sources */,
 				007401DF1FB93ACE0042F460 /* UILabel+CGSetupAppearance.m in Sources */,
 				007401F21FB93ACE0042F460 /* WKWebView+CGValue.m in Sources */,
+				007403111FB9817F0042F460 /* UIImage+CGScaleImageSize.m in Sources */,
 				007402271FB93ACE0042F460 /* CGTableView.m in Sources */,
 				007402A61FB93ACF0042F460 /* CGNavigationDelegateObject.m in Sources */,
 				007401DE1FB93ACE0042F460 /* UIScrollView+CGProperty.m in Sources */,
@@ -3802,7 +4055,6 @@
 				007402011FB93ACE0042F460 /* UIButton+AreaCalculate.m in Sources */,
 				008254001FB5A86600AE3152 /* CGPhotoLibraryViewController.swift in Sources */,
 				007402471FB93ACE0042F460 /* CGInputAccessoryViewAppearance.m in Sources */,
-				007401831FB93ACD0042F460 /* UIImage+CGImage.m in Sources */,
 				007401AC1FB93ACE0042F460 /* UIView+CGLineMoveView.m in Sources */,
 				0074026B1FB93ACF0042F460 /* CGTitleImageLayoutView.m in Sources */,
 				007401AD1FB93ACE0042F460 /* UIView+CGScaleView.m in Sources */,
@@ -3810,20 +4062,22 @@
 				007402331FB93ACE0042F460 /* CGCollectionViewDataSourceManager.m in Sources */,
 				007402701FB93ACF0042F460 /* CGTitleLabelView.m in Sources */,
 				007401C91FB93ACE0042F460 /* NSDictionary+CGKeyIndexPath.m in Sources */,
+				007402F61FB976360042F460 /* CGImageDataModel.swift in Sources */,
 				0074020A1FB93ACE0042F460 /* UIScrollView+CGCreate.m in Sources */,
 				007401DC1FB93ACE0042F460 /* UIScrollView+CGSetupScrollProperty.m in Sources */,
 				0074027D1FB93ACF0042F460 /* UIImage+CGDrawAlertArrow.m in Sources */,
 				0074025B1FB93ACF0042F460 /* CGDoubleButtonsView.m in Sources */,
 				0074020E1FB93ACE0042F460 /* UILabel+CalculateTextSize.m in Sources */,
 				007402861FB93ACF0042F460 /* CGCreateSubviewsFlowLayoutConfigModel.m in Sources */,
+				0074030E1FB9817F0042F460 /* UIImage+CGResizableImage.m in Sources */,
 				007402A51FB93ACF0042F460 /* CGTitleTableViewController.m in Sources */,
 				007401D41FB93ACE0042F460 /* NSDate+CGTransformString.m in Sources */,
 				007402511FB93ACF0042F460 /* CGLineBoxView.m in Sources */,
 				007401B51FB93ACE0042F460 /* NSObject+CGGetPrivateAPI.m in Sources */,
 				007401A31FB93ACE0042F460 /* CGTableViewProtocolBaseManager.swift in Sources */,
-				007401861FB93ACD0042F460 /* UIImage+CGColor.m in Sources */,
 				007401D51FB93ACE0042F460 /* NSDate+CGMLDateCategory.m in Sources */,
 				007401801FB93ACD0042F460 /* CGTitlesSourceDataModel.m in Sources */,
+				007402E91FB976360042F460 /* CGURLSessionDelegateManager.swift in Sources */,
 				007401A81FB93ACE0042F460 /* Double+PriceCalculateRules.swift in Sources */,
 				007401BF1FB93ACE0042F460 /* NSUserDefaults+CGMethodSave.m in Sources */,
 				007401F51FB93ACE0042F460 /* UICollectionView+CGDequeueReusableCell.m in Sources */,
@@ -3832,6 +4086,7 @@
 				0074028D1FB93ACF0042F460 /* UIViewController+InteractivePopEnable.m in Sources */,
 				007401951FB93ACD0042F460 /* CGFCManager.m in Sources */,
 				007402931FB93ACF0042F460 /* CGNavigationController.m in Sources */,
+				007402ED1FB976360042F460 /* CGTaskRequestDataModel.swift in Sources */,
 				007401E61FB93ACE0042F460 /* UIView+CGAddSubview.m in Sources */,
 				007401F81FB93ACE0042F460 /* UITableView+CGReloadTableView.m in Sources */,
 				0074029B1FB93ACF0042F460 /* CGWebPrivateView.m in Sources */,
@@ -3851,7 +4106,9 @@
 				007402691FB93ACF0042F460 /* CGDoubleTitleBaseView.m in Sources */,
 				007402361FB93ACE0042F460 /* UICollectionViewFlowLayout+CGCreateLayout.m in Sources */,
 				007402371FB93ACE0042F460 /* CGCollectionViewFloatLayout.m in Sources */,
+				007402F71FB976360042F460 /* CGBrowseFullScreenView.swift in Sources */,
 				007402501FB93ACF0042F460 /* CGLineView.m in Sources */,
+				0074030D1FB9817F0042F460 /* UIImage+CGDrawImage.m in Sources */,
 				007402561FB93ACF0042F460 /* CGBaseView.m in Sources */,
 				007402581FB93ACF0042F460 /* CGSelectorLayerAnimation.m in Sources */,
 				0074028C1FB93ACF0042F460 /* UINavigationController+CGPushViewController.m in Sources */,
@@ -3867,6 +4124,7 @@
 				007402961FB93ACF0042F460 /* CGNavigationBarViewController.m in Sources */,
 				007402261FB93ACE0042F460 /* CGSingleSectionBaseTableView.m in Sources */,
 				007401CC1FB93ACE0042F460 /* NSBundle+GetAppInfo.m in Sources */,
+				007402F51FB976360042F460 /* CGStringExtension.swift in Sources */,
 				007401D21FB93ACE0042F460 /* CGRequestBaseModel+Category.m in Sources */,
 				007401C41FB93ACE0042F460 /* NSString+CGStrlen.m in Sources */,
 				007402241FB93ACE0042F460 /* CGTableViewEditDataSourceManager.m in Sources */,
@@ -3876,17 +4134,22 @@
 				007402461FB93ACE0042F460 /* CGTextFieldDelegateManager.m in Sources */,
 				007402391FB93ACE0042F460 /* CGUIWebViewDelegateManager.m in Sources */,
 				007401F91FB93ACE0042F460 /* UITableView+CGScrolling.m in Sources */,
+				007402F11FB976360042F460 /* CGImageExtension.swift in Sources */,
+				007402EA1FB976360042F460 /* CGURLSessionManager.swift in Sources */,
+				007402F21FB976360042F460 /* CGPointExtension.swift in Sources */,
 				007401E21FB93ACE0042F460 /* UIView+CGViewCategory.m in Sources */,
 				007402321FB93ACE0042F460 /* CGBrowsePhotoListView.m in Sources */,
 				007401B61FB93ACE0042F460 /* NSTimer+ChangeTimerStatus.m in Sources */,
 				007402781FB93ACF0042F460 /* CGCycleScrollView+CGBuildView.m in Sources */,
 				007402601FB93ACF0042F460 /* CGRadioSliderViewAppearance.m in Sources */,
-				0074018E1FB93ACD0042F460 /* UIImage+CGLoadImage.m in Sources */,
 				007402341FB93ACE0042F460 /* CGCollectionView.m in Sources */,
+				007402EB1FB976360042F460 /* CGURLSessionType.swift in Sources */,
 				0074020D1FB93ACE0042F460 /* UIView+Transform.m in Sources */,
+				007402E41FB976360042F460 /* CGMapManager.swift in Sources */,
 				007402A71FB93ACF0042F460 /* CGDefaultPopAnimation.m in Sources */,
 				0074026F1FB93ACF0042F460 /* CGTitleTextFieldView.m in Sources */,
 				007402951FB93ACF0042F460 /* CGBaseViewController.m in Sources */,
+				007402EF1FB976360042F460 /* CGTaskDataModel.swift in Sources */,
 				007402721FB93ACF0042F460 /* CGCycleBrowseImageScrollView+CGSetupCycleProperty.m in Sources */,
 				0074023E1FB93ACE0042F460 /* CGTitleLabel.m in Sources */,
 				0074022C1FB93ACE0042F460 /* CGImageView.m in Sources */,
@@ -3901,20 +4164,23 @@
 				0074024F1FB93ACE0042F460 /* CGBaseButton.m in Sources */,
 				0074025E1FB93ACF0042F460 /* CGRadioViewFlowLayout.m in Sources */,
 				0074023D1FB93ACE0042F460 /* CGWebView.m in Sources */,
+				007402F31FB976360042F460 /* CGNumberExtension.swift in Sources */,
 				007401FF1FB93ACE0042F460 /* UIButton+UpdateLocate.m in Sources */,
 				007402621FB93ACF0042F460 /* CGTitleRadioCollectionViewCell.m in Sources */,
 				007402041FB93ACE0042F460 /* CGTextField+CGCreate.m in Sources */,
+				007403101FB9817F0042F460 /* UIImage+CGImageRotate.m in Sources */,
 				007402231FB93ACE0042F460 /* CGSingleSectionTableViewDataSource.m in Sources */,
 				0074028A1FB93ACF0042F460 /* UIViewController+CGPropertyValue.m in Sources */,
 				007401B01FB93ACE0042F460 /* UINavigationController+PushAndPopAnmation.m in Sources */,
 				007402021FB93ACE0042F460 /* UIView+CreateAutoLayoutTypeView.m in Sources */,
 				007402131FB93ACE0042F460 /* UIView+CGSearchConstraints.m in Sources */,
 				007402901FB93ACF0042F460 /* UIViewController+CGSearchNavigationController.m in Sources */,
+				007402E61FB976360042F460 /* CGURLSessionManagerConfiguration.swift in Sources */,
 				007402161FB93ACE0042F460 /* UIView+CGCreateConstraint.m in Sources */,
 				007402571FB93ACF0042F460 /* CGBaseSelectorView.m in Sources */,
-				007401841FB93ACD0042F460 /* UIImage+CGResizableImage.m in Sources */,
 				007401C21FB93ACE0042F460 /* NSString+CGEncryption.m in Sources */,
-				007401871FB93ACD0042F460 /* UIImage+CGImageRotate.m in Sources */,
+				007402E81FB976360042F460 /* CGURLTaskManager.swift in Sources */,
+				0074030F1FB9817F0042F460 /* UIImage+CGImage.m in Sources */,
 				007402771FB93ACF0042F460 /* CGCycleScrollView+CGBuildLayout.m in Sources */,
 				007401C51FB93ACE0042F460 /* NSString+VerificationString.m in Sources */,
 				0074027E1FB93ACF0042F460 /* CGAlertArrowAppearance.m in Sources */,
@@ -3955,6 +4221,7 @@
 				007401E31FB93ACE0042F460 /* UIView+CGSetupAppearance.m in Sources */,
 				007402711FB93ACF0042F460 /* CGRoundProgressView.m in Sources */,
 				0074028E1FB93ACF0042F460 /* UIViewController+CGFullscreenPopGesture.m in Sources */,
+				007402E51FB976360042F460 /* CGLocationManager.swift in Sources */,
 				0074029D1FB93ACF0042F460 /* CGTitleBarViewController.m in Sources */,
 				007401EC1FB93ACE0042F460 /* UIView+CGSearchView.m in Sources */,
 				0074022B1FB93ACE0042F460 /* CGTextView.m in Sources */,
@@ -3972,6 +4239,7 @@
 				007401E91FB93ACE0042F460 /* UIView+CGFlowSubviewsSetup.m in Sources */,
 				007401C61FB93ACE0042F460 /* UIView+Constant.m in Sources */,
 				0074021D1FB93ACE0042F460 /* NSArray+CGAddConstraints.m in Sources */,
+				0074030C1FB9817F0042F460 /* UIImage+CGColor.m in Sources */,
 				007402171FB93ACE0042F460 /* NSLayoutConstraint+CGConstraint.m in Sources */,
 				007402631FB93ACF0042F460 /* CGRadioCollectionViewCell.m in Sources */,
 				007401F31FB93ACE0042F460 /* UIWebView+CGValue.m in Sources */,
@@ -3990,6 +4258,7 @@
 				0074024B1FB93ACE0042F460 /* CGButton.m in Sources */,
 				007402431FB93ACE0042F460 /* CGLayoutMarginLabel.m in Sources */,
 				007402801FB93ACF0042F460 /* CGBorderObject.m in Sources */,
+				007403121FB9817F0042F460 /* UIImage+CGLoadImage.m in Sources */,
 				007402311FB93ACE0042F460 /* HorizontalSingleView.m in Sources */,
 				0074023F1FB93ACE0042F460 /* CGPlaceholderLabel.m in Sources */,
 				007402051FB93ACE0042F460 /* UITableView+CGCreateTableView.m in Sources */,
@@ -4019,6 +4288,7 @@
 				007402251FB93ACE0042F460 /* CGTableViewDataSourceManager.m in Sources */,
 				007401E81FB93ACE0042F460 /* UIView+CGCreateViews.m in Sources */,
 				007402551FB93ACF0042F460 /* CGSingeContentTableView.m in Sources */,
+				007402EC1FB976360042F460 /* CGUploadImageModel.swift in Sources */,
 				007402791FB93ACF0042F460 /* CGCycleAideContentView.m in Sources */,
 				007402081FB93ACE0042F460 /* UILabel+CGCreateCustomLabel.m in Sources */,
 				007402671FB93ACF0042F460 /* CGTitlesTableView.m in Sources */,
@@ -4030,10 +4300,10 @@
 				007401961FB93ACD0042F460 /* TEMPCGRequestManager.m in Sources */,
 				007401891FB93ACD0042F460 /* CGArrowIconConfig.m in Sources */,
 				0074023C1FB93ACE0042F460 /* NJKWebViewProgress.m in Sources */,
+				007402FB1FB976360042F460 /* CGFoulLineView.swift in Sources */,
 				007402001FB93ACE0042F460 /* UIButton+CGSetupAppearance.m in Sources */,
 				007402611FB93ACF0042F460 /* CGRadioView.m in Sources */,
 				007402911FB93ACF0042F460 /* CGNavigationAppearance.m in Sources */,
-				007401851FB93ACD0042F460 /* UIImage+CGDrawImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

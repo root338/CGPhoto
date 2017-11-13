@@ -15,12 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let result = PHAsset.fetchAssets(with: nil)
-        result.enumerateObjects { (asset, idx, pointer) in
-            
-        }
-        
-        
+        test_addMLImageView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +23,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //MARK:- 测试
+    
+    func test_addMLImageView() {
+        
+        let image = UIImage.init(named: "1.jpg")
+        let imageView = MLImageView.init(image: image)
+        imageView.imageContentMode  = .bottom
+        
+        self.view.addSubview(imageView)
+        
+        imageView.cg_autoEdgesInsetsZero(to: self)
+    }
+    
+    func test_addCGPhoto() {
+        
+        let result = PHAsset.fetchAssets(with: nil)
+        result.enumerateObjects { (asset, idx, pointer) in
+            
+        }
+    }
 }
 
