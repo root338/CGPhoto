@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         result.enumerateObjects { (asset, idx, pointer) in
             
         }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

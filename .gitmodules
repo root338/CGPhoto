@@ -1,0 +1,3 @@
+[submodule "CGPhoto/CG_CGKit"]
+	path = CGPhoto/CG_CGKit
+	url = git@github.com:root338/CG_CGKit.git
