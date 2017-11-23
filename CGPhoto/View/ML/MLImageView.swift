@@ -192,7 +192,7 @@ fileprivate extension MLImageView {
     
     /// 重置 imageView 的 frame
     func resetImageViewLayout() {
-        
+        // 需要先还原下 UIScrollView 的缩放值，否则在之后的 contentSize 中的计算会出现问题
         self.scrollView.setZoomScale(1.0, animated: true)
         let contentMode = self.imageView.contentMode
         let targetSize  = self.size
@@ -200,42 +200,26 @@ fileprivate extension MLImageView {
             return
         }
         
-        self.setupResetViewsSize(contentMode: contentMode, targetSize: targetSize)
+        self.setupResetViewsSize(contentMode: contentMode, targetSize: targetSize, loadImage: self.imageView.image!)
         
     }
     
     /// 设置重置相关视图
-    private func setupResetViewsSize(contentMode: UIViewContentMode, targetSize: CGSize) {
+    private func setupResetViewsSize(contentMode: UIViewContentMode, targetSize: CGSize, loadImage: UIImage) {
         
-        var imageViewSize : CGSize
-        
-        guard let loadImage = self.imageView.image else {
-            return
-        }
-        
-        switch contentMode {
-        case .scaleToFill:
-            
-            imageViewSize   = targetSize
-        case .scaleAspectFit:
-            
-            imageViewSize   = loadImage.cg_calculateScaleAspectFitSize(withTargetSize: self.size)
-        case .scaleAspectFill:
-            
-            imageViewSize   = loadImage.cg_calculateScale(.sizeForScaleAspectFill, aspectFitSizeWithTargetSize: targetSize)
-        default:
-            imageViewSize   = loadImage.size
-        }
+        let imageViewSize = self.calculateImageViewSize(targetContentMode: contentMode, loadImage: loadImage, targetSize: targetSize)
         
         let imageViewPoints = self.calculateImageViewPoint(targetContentMode: contentMode, imageViewSize: imageViewSize, targetSize: targetSize)
         
         let contentSize = imageViewSize
         
-        let contentOffset = CGPoint.init(x: imageViewPoints.originPoint.x * -1, y: imageViewPoints.originPoint.y * -1)
+        let contentOffset = imageViewPoints.contentOffset
         
-        self.imageView.frame = .init(origin: imageViewPoints.imageViewPoint, size: imageViewSize)
-        
-        self.resetImageViewScrollArea(contentSize: contentSize, contentOffset: contentOffset)
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
+            self.imageView.frame = .init(origin: imageViewPoints.imageViewPoint, size: imageViewSize)
+        }) { (finishes) in
+            self.resetImageViewScrollArea(contentSize: contentSize, contentOffset: contentOffset)
+        }
     }
     
     /// 重置 scrollView 的 contentSize 和 contentOffset
@@ -243,10 +227,11 @@ fileprivate extension MLImageView {
         
         self.scrollView.contentSize     = contentSize
         self.scrollView.setContentOffset(contentOffset, animated: false)
+        
     }
     
-    /// 计算imageView自身大小，相对于指定大小，在不同加载类型下的坐标
-    func calculateImageViewPoint(targetContentMode: UIViewContentMode, imageViewSize: CGSize, targetSize: CGSize) -> (imageViewPoint: CGPoint, originPoint: CGPoint) {
+    /// 计算imageView自身大小相对于指定大小，在不同加载类型下的坐标
+    func calculateImageViewPoint(targetContentMode: UIViewContentMode, imageViewSize: CGSize, targetSize: CGSize) -> (imageViewPoint: CGPoint, contentOffset: CGPoint) {
         
         let minX = (targetSize.width - imageViewSize.width) / 2.0
         let minY = (targetSize.height - imageViewSize.height) / 2.0
@@ -295,25 +280,52 @@ fileprivate extension MLImageView {
         case .scaleAspectFit:
             fallthrough
         case .scaleAspectFill:
+            
             if imageViewSize.width == targetSize.width {
                 x = zeroX
                 y = minY
-            }else {
+            }else if imageViewSize.height == targetSize.height {
                 x = minX
                 y = zeroY
+            }else {
+                x = (targetSize.width - imageViewSize.width) / 2.0
+                y = (targetSize.height - imageViewSize.height) / 2.0
             }
         case .redraw:
             break
         }
         
-        let originPoint         = CGPoint.init(x: x, y: y)
-        let imageViewPoint      = CGPoint.init(x: imageViewSize.width < targetSize.width ? x : 0, y: imageViewSize.height < targetSize.height ? y : 0)
+        let originPoint     = CGPoint.init(x: x, y: y)
+        let imageViewPoint  = CGPoint.init(x: originPoint.x >= 0 ? x : 0, y: originPoint.y >= 0 ? y : 0)
+        let contentOffset   = CGPoint.init(x: originPoint.x < 0 ? abs(originPoint.x) : 0, y: originPoint.y < 0 ? abs(originPoint.y) : 0)
         
-        return (imageViewPoint, originPoint)
+        return (imageViewPoint, contentOffset)
+    }
+    
+    /// 计算imageView大小
+    func calculateImageViewSize(targetContentMode: UIViewContentMode, loadImage: UIImage, targetSize: CGSize) ->CGSize {
+        
+        var imageViewSize : CGSize
+        switch targetContentMode {
+        case .scaleToFill:
+            
+            imageViewSize   = targetSize
+        case .scaleAspectFit:
+            
+            imageViewSize   = loadImage.cg_calculateScaleAspectFitSize(withTargetSize: targetSize)
+        case .scaleAspectFill:
+            
+            imageViewSize   = loadImage.cg_calculateScale(.sizeForScaleAspectFill, aspectFitSizeWithTargetSize: targetSize)
+        default:
+            imageViewSize   = loadImage.size
+        }
+        
+        return imageViewSize
     }
     
     /// 验证是否可以设置相关视图
     func shouldSetupViewContentLayout(contentMode: UIViewContentMode, targetSize: CGSize) -> Bool {
+        
         guard contentMode != .redraw else {
             return false
         }
@@ -341,6 +353,12 @@ extension MLImageView: UIScrollViewDelegate {
         
         self.setupImageViewPoint()
     }
+    
+//    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+//        if view != nil {
+//            self.resetImageViewScrollArea(contentSize: view!.size, contentOffset: scrollView.contentOffset)
+//        }
+//    }
     
     func setupImageViewPoint() {
         
@@ -405,7 +423,7 @@ fileprivate extension MLImageView {
                 
                 let doubleClickGestureRecognizer  = UITapGestureRecognizer.init(target: self, action: #selector(handle(doubleClickGestureRecognizer:)))
                 doubleClickGestureRecognizer.numberOfTouchesRequired    = 1
-                doubleClickGestureRecognizer.numberOfTapsRequired       = 1
+                doubleClickGestureRecognizer.numberOfTapsRequired       = 2
                 gestureRecognizers  = doubleClickGestureRecognizer
                 
             case .longPress:    // 长按
@@ -488,7 +506,9 @@ fileprivate extension MLImageView {
         
         if self.scrollView.zoomScale == 1 {
             
+            
         }else {
+            
             self.resetImageViewLayout()
         }
     }
