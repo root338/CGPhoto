@@ -43,4 +43,13 @@ public extension CGPoint {
     public mutating func setupOffsetLess(point: CGPoint) {
         self = self.offsetLess(point: point)
     }
+    
+}
+
+public extension CGPoint {
+    
+    /// 获取两个坐标的中间坐标
+    public static func cg_centerPoint(point1: CGPoint, point2: CGPoint) -> CGPoint {
+        return CGPoint.init(x: (point1.x + point2.x) / 2.0, y: (point1.y + point2.y) / 2.0)
+    }
 }

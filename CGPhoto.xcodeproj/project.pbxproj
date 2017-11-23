@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00578FE31FC697BD005D4BFB /* CGLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FE21FC697BD005D4BFB /* CGLabelExtension.swift */; };
+		00578FE61FC6983E005D4BFB /* GesturesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FE51FC6983E005D4BFB /* GesturesExtension.swift */; };
+		00578FEC1FC6B798005D4BFB /* MLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FE81FC6B796005D4BFB /* MLImageView.swift */; };
+		00578FED1FC6B798005D4BFB /* MLImageViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FEA1FC6B796005D4BFB /* MLImageViewConfig.swift */; };
+		00578FEE1FC6B798005D4BFB /* MLImageGestureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FEB1FC6B796005D4BFB /* MLImageGestureModel.swift */; };
+		0058B3561FC5631500E0D5D9 /* 笑脸.png in Resources */ = {isa = PBXBuildFile; fileRef = 0058B3551FC5631400E0D5D9 /* 笑脸.png */; };
+		0058B35D1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0058B35C1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift */; };
 		007401801FB93ACD0042F460 /* CGTitlesSourceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE1A1FB93ACA0042F460 /* CGTitlesSourceDataModel.m */; };
 		007401821FB93ACD0042F460 /* CGWebViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE1D1FB93ACA0042F460 /* CGWebViewConfig.m */; };
 		007401891FB93ACD0042F460 /* CGArrowIconConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE341FB93ACB0042F460 /* CGArrowIconConfig.m */; };
@@ -28,7 +35,6 @@
 		0074019A1FB93ACD0042F460 /* ALAsset+CGProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE621FB93ACB0042F460 /* ALAsset+CGProperty.m */; };
 		0074019B1FB93ACD0042F460 /* CGAssetsFilterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE681FB93ACB0042F460 /* CGAssetsFilterObject.m */; };
 		0074019C1FB93ACD0042F460 /* CGAssetsLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE691FB93ACB0042F460 /* CGAssetsLibraryManager.m */; };
-		0074019D1FB93ACD0042F460 /* CGLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE6D1FB93ACB0042F460 /* CGLabelExtension.swift */; };
 		0074019E1FB93ACD0042F460 /* CGSemicircleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE701FB93ACB0042F460 /* CGSemicircleLabel.swift */; };
 		0074019F1FB93ACE0042F460 /* CGInsetsLayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE711FB93ACB0042F460 /* CGInsetsLayoutLabel.swift */; };
 		007401A01FB93ACE0042F460 /* CGBaseFlowButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE741FB93ACB0042F460 /* CGBaseFlowButtonsView.swift */; };
@@ -151,12 +157,6 @@
 		007402161FB93ACE0042F460 /* UIView+CGCreateConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFCD1FB93ACC0042F460 /* UIView+CGCreateConstraint.m */; };
 		007402171FB93ACE0042F460 /* NSLayoutConstraint+CGConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFD11FB93ACC0042F460 /* NSLayoutConstraint+CGConstraint.m */; };
 		007402181FB93ACE0042F460 /* NSLayoutConstraint+CGVerifyConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFD21FB93ACC0042F460 /* NSLayoutConstraint+CGVerifyConstraint.m */; };
-		007402191FB93ACE0042F460 /* UIView+CGAddConstraintsForSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFD61FB93ACC0042F460 /* UIView+CGAddConstraintsForSubviews.m */; };
-		0074021A1FB93ACE0042F460 /* CGTwoSubviewsConstraintsAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFD91FB93ACC0042F460 /* CGTwoSubviewsConstraintsAppearance.m */; };
-		0074021B1FB93ACE0042F460 /* UIView+CGConstraintsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFDB1FB93ACC0042F460 /* UIView+CGConstraintsManager.m */; };
-		0074021C1FB93ACE0042F460 /* UIView+CGAddConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFDC1FB93ACC0042F460 /* UIView+CGAddConstraints.m */; };
-		0074021D1FB93ACE0042F460 /* NSArray+CGAddConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFDE1FB93ACC0042F460 /* NSArray+CGAddConstraints.m */; };
-		0074021E1FB93ACE0042F460 /* UIView+CGAddConstraintStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFE01FB93ACC0042F460 /* UIView+CGAddConstraintStatus.m */; };
 		0074021F1FB93ACE0042F460 /* CGBorderBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFEE1FB93ACC0042F460 /* CGBorderBaseLayer.m */; };
 		007402201FB93ACE0042F460 /* CGScrollViewDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFF21FB93ACC0042F460 /* CGScrollViewDelegateManager.m */; };
 		007402211FB93ACE0042F460 /* CGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FFF51FB93ACC0042F460 /* CGScrollView.m */; };
@@ -324,7 +324,6 @@
 		007403101FB9817F0042F460 /* UIImage+CGImageRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403071FB9817D0042F460 /* UIImage+CGImageRotate.m */; };
 		007403111FB9817F0042F460 /* UIImage+CGScaleImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403081FB9817D0042F460 /* UIImage+CGScaleImageSize.m */; };
 		007403121FB9817F0042F460 /* UIImage+CGLoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074030A1FB9817E0042F460 /* UIImage+CGLoadImage.m */; };
-		0074FE121FB9351D0042F460 /* MLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE111FB9351D0042F460 /* MLImageView.swift */; };
 		0074FE141FB939DB0042F460 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0074FE131FB939DA0042F460 /* 1.jpg */; };
 		008253CE1FB5A7CB00AE3152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008253CD1FB5A7CB00AE3152 /* AppDelegate.swift */; };
 		008253D01FB5A7CB00AE3152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008253CF1FB5A7CB00AE3152 /* ViewController.swift */; };
@@ -336,6 +335,12 @@
 		008253FE1FB5A82A00AE3152 /* CGPhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008253FD1FB5A82A00AE3152 /* CGPhotoManager.swift */; };
 		008254001FB5A86600AE3152 /* CGPhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008253FF1FB5A86600AE3152 /* CGPhotoLibraryViewController.swift */; };
 		008254031FB5B27B00AE3152 /* CGAssetCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008254021FB5B27B00AE3152 /* CGAssetCollectionModel.swift */; };
+		008C71191FBACBCD00305190 /* UIView+CGAddConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C71111FBACBC800305190 /* UIView+CGAddConstraints.m */; };
+		008C711A1FBACBCD00305190 /* UIView+CGConstraintsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C71151FBACBCA00305190 /* UIView+CGConstraintsManager.m */; };
+		008C711B1FBACBCD00305190 /* UIView+CGAddConstraintStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C71161FBACBCA00305190 /* UIView+CGAddConstraintStatus.m */; };
+		008C711C1FBACBCD00305190 /* NSArray+CGAddConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C71171FBACBCA00305190 /* NSArray+CGAddConstraints.m */; };
+		008C71231FBACBF200305190 /* UIView+CGAddConstraintsForSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C711E1FBACBF100305190 /* UIView+CGAddConstraintsForSubviews.m */; };
+		008C71241FBACBF200305190 /* CGTwoSubviewsConstraintsAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C71211FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -356,6 +361,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001EA5C01FBD242300956E2F /* CGLayoutAnchorConstraintsTypeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGLayoutAnchorConstraintsTypeHeader.h; sourceTree = "<group>"; };
+		00578FE21FC697BD005D4BFB /* CGLabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGLabelExtension.swift; sourceTree = "<group>"; };
+		00578FE51FC6983E005D4BFB /* GesturesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesExtension.swift; sourceTree = "<group>"; };
+		00578FE81FC6B796005D4BFB /* MLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLImageView.swift; sourceTree = "<group>"; };
+		00578FEA1FC6B796005D4BFB /* MLImageViewConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLImageViewConfig.swift; sourceTree = "<group>"; };
+		00578FEB1FC6B796005D4BFB /* MLImageGestureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLImageGestureModel.swift; sourceTree = "<group>"; };
+		0058B3551FC5631400E0D5D9 /* 笑脸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "笑脸.png"; sourceTree = "<group>"; };
+		0058B35C1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDefinesEnumHeader.swift; sourceTree = "<group>"; };
 		007400001FB93ACC0042F460 /* CGTableViewDataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGTableViewDataSourceManager.m; sourceTree = "<group>"; };
 		007400011FB93ACC0042F460 /* CGTableViewEditDataSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTableViewEditDataSourceManager.h; sourceTree = "<group>"; };
 		007400031FB93ACC0042F460 /* CGSingleSectionBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSingleSectionBaseTableView.h; sourceTree = "<group>"; };
@@ -683,7 +696,6 @@
 		007403091FB9817D0042F460 /* UIImage+CGLoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGLoadImage.h"; sourceTree = "<group>"; };
 		0074030A1FB9817E0042F460 /* UIImage+CGLoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CGLoadImage.m"; sourceTree = "<group>"; };
 		0074030B1FB9817E0042F460 /* UIImage+CGDrawImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CGDrawImage.h"; sourceTree = "<group>"; };
-		0074FE111FB9351D0042F460 /* MLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLImageView.swift; sourceTree = "<group>"; };
 		0074FE131FB939DA0042F460 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		0074FE161FB93ACA0042F460 /* CG_CGKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CG_CGKit.h; sourceTree = "<group>"; };
 		0074FE191FB93ACA0042F460 /* CGTitlesSourceDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTitlesSourceDataModel.h; sourceTree = "<group>"; };
@@ -732,7 +744,6 @@
 		0074FE671FB93ACB0042F460 /* CGAssetsFilterTypeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGAssetsFilterTypeHeader.h; sourceTree = "<group>"; };
 		0074FE681FB93ACB0042F460 /* CGAssetsFilterObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAssetsFilterObject.m; sourceTree = "<group>"; };
 		0074FE691FB93ACB0042F460 /* CGAssetsLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGAssetsLibraryManager.m; sourceTree = "<group>"; };
-		0074FE6D1FB93ACB0042F460 /* CGLabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGLabelExtension.swift; sourceTree = "<group>"; };
 		0074FE701FB93ACB0042F460 /* CGSemicircleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSemicircleLabel.swift; sourceTree = "<group>"; };
 		0074FE711FB93ACB0042F460 /* CGInsetsLayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGInsetsLayoutLabel.swift; sourceTree = "<group>"; };
 		0074FE741FB93ACB0042F460 /* CGBaseFlowButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGBaseFlowButtonsView.swift; sourceTree = "<group>"; };
@@ -991,18 +1002,6 @@
 		0074FFD01FB93ACC0042F460 /* NSLayoutConstraint+CGVerifyConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+CGVerifyConstraint.h"; sourceTree = "<group>"; };
 		0074FFD11FB93ACC0042F460 /* NSLayoutConstraint+CGConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+CGConstraint.m"; sourceTree = "<group>"; };
 		0074FFD21FB93ACC0042F460 /* NSLayoutConstraint+CGVerifyConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+CGVerifyConstraint.m"; sourceTree = "<group>"; };
-		0074FFD41FB93ACC0042F460 /* NSArray+CGAddConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CGAddConstraints.h"; sourceTree = "<group>"; };
-		0074FFD61FB93ACC0042F460 /* UIView+CGAddConstraintsForSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGAddConstraintsForSubviews.m"; sourceTree = "<group>"; };
-		0074FFD81FB93ACC0042F460 /* CGTwoSubviewsConstraintsAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTwoSubviewsConstraintsAppearance.h; sourceTree = "<group>"; };
-		0074FFD91FB93ACC0042F460 /* CGTwoSubviewsConstraintsAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGTwoSubviewsConstraintsAppearance.m; sourceTree = "<group>"; };
-		0074FFDA1FB93ACC0042F460 /* UIView+CGAddConstraintsForSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGAddConstraintsForSubviews.h"; sourceTree = "<group>"; };
-		0074FFDB1FB93ACC0042F460 /* UIView+CGConstraintsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGConstraintsManager.m"; sourceTree = "<group>"; };
-		0074FFDC1FB93ACC0042F460 /* UIView+CGAddConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGAddConstraints.m"; sourceTree = "<group>"; };
-		0074FFDD1FB93ACC0042F460 /* UIView+CGAddConstraintStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGAddConstraintStatus.h"; sourceTree = "<group>"; };
-		0074FFDE1FB93ACC0042F460 /* NSArray+CGAddConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CGAddConstraints.m"; sourceTree = "<group>"; };
-		0074FFDF1FB93ACC0042F460 /* UIView+CGConstraintsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGConstraintsManager.h"; sourceTree = "<group>"; };
-		0074FFE01FB93ACC0042F460 /* UIView+CGAddConstraintStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGAddConstraintStatus.m"; sourceTree = "<group>"; };
-		0074FFE11FB93ACC0042F460 /* UIView+CGAddConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGAddConstraints.h"; sourceTree = "<group>"; };
 		0074FFE31FB93ACC0042F460 /* CGKitUICategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGKitUICategoryHeader.h; sourceTree = "<group>"; };
 		0074FFE41FB93ACC0042F460 /* CGLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLayoutDefines.h; sourceTree = "<group>"; };
 		0074FFE51FB93ACC0042F460 /* CGSearchConstraintTypeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSearchConstraintTypeHeader.h; sourceTree = "<group>"; };
@@ -1040,6 +1039,18 @@
 		008253FD1FB5A82A00AE3152 /* CGPhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoManager.swift; sourceTree = "<group>"; };
 		008253FF1FB5A86600AE3152 /* CGPhotoLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoLibraryViewController.swift; sourceTree = "<group>"; };
 		008254021FB5B27B00AE3152 /* CGAssetCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAssetCollectionModel.swift; sourceTree = "<group>"; };
+		008C71111FBACBC800305190 /* UIView+CGAddConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGAddConstraints.m"; sourceTree = "<group>"; };
+		008C71121FBACBC800305190 /* UIView+CGAddConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGAddConstraints.h"; sourceTree = "<group>"; };
+		008C71131FBACBC900305190 /* UIView+CGAddConstraintStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGAddConstraintStatus.h"; sourceTree = "<group>"; };
+		008C71141FBACBC900305190 /* UIView+CGConstraintsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGConstraintsManager.h"; sourceTree = "<group>"; };
+		008C71151FBACBCA00305190 /* UIView+CGConstraintsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGConstraintsManager.m"; sourceTree = "<group>"; };
+		008C71161FBACBCA00305190 /* UIView+CGAddConstraintStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGAddConstraintStatus.m"; sourceTree = "<group>"; };
+		008C71171FBACBCA00305190 /* NSArray+CGAddConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CGAddConstraints.m"; sourceTree = "<group>"; };
+		008C71181FBACBCC00305190 /* NSArray+CGAddConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CGAddConstraints.h"; sourceTree = "<group>"; };
+		008C711E1FBACBF100305190 /* UIView+CGAddConstraintsForSubviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGAddConstraintsForSubviews.m"; sourceTree = "<group>"; };
+		008C71201FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTwoSubviewsConstraintsAppearance.h; sourceTree = "<group>"; };
+		008C71211FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGTwoSubviewsConstraintsAppearance.m; sourceTree = "<group>"; };
+		008C71221FBACBF100305190 /* UIView+CGAddConstraintsForSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGAddConstraintsForSubviews.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1067,6 +1078,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00578FE11FC697BD005D4BFB /* ViewsAndControls */ = {
+			isa = PBXGroup;
+			children = (
+				00578FE21FC697BD005D4BFB /* CGLabelExtension.swift */,
+			);
+			path = ViewsAndControls;
+			sourceTree = "<group>";
+		};
+		00578FE41FC69817005D4BFB /* TouchesPressesAndGestures  */ = {
+			isa = PBXGroup;
+			children = (
+				00578FE51FC6983E005D4BFB /* GesturesExtension.swift */,
+			);
+			path = "TouchesPressesAndGestures ";
+			sourceTree = "<group>";
+		};
+		00578FE71FC6B796005D4BFB /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				00578FE81FC6B796005D4BFB /* MLImageView.swift */,
+				00578FE91FC6B796005D4BFB /* Model */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		00578FE91FC6B796005D4BFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00578FEA1FC6B796005D4BFB /* MLImageViewConfig.swift */,
+				00578FEB1FC6B796005D4BFB /* MLImageGestureModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0058B3571FC57BBA00E0D5D9 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		0058B3581FC57C5700E0D5D9 /* CGDefinesHeader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CGDefinesHeader;
+			sourceTree = "<group>";
+		};
+		0058B3591FC57C7D00E0D5D9 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		0058B35B1FC57C9C00E0D5D9 /* CGDefinesHeader */ = {
+			isa = PBXGroup;
+			children = (
+				0058B35C1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift */,
+			);
+			path = CGDefinesHeader;
+			sourceTree = "<group>";
+		};
 		007400021FB93ACC0042F460 /* BaseTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2273,6 +2347,7 @@
 		007402DB1FB976360042F460 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0058B3581FC57C5700E0D5D9 /* CGDefinesHeader */,
 				007402DC1FB976360042F460 /* UIView */,
 			);
 			path = View;
@@ -2281,6 +2356,7 @@
 		007402DC1FB976360042F460 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				0058B3571FC57BBA00E0D5D9 /* ImageView */,
 				007402DD1FB976360042F460 /* BrowseView */,
 				007402E21FB976360042F460 /* LineView */,
 			);
@@ -2309,7 +2385,7 @@
 		0074FE101FB934EB0042F460 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0074FE111FB9351D0042F460 /* MLImageView.swift */,
+				00578FE71FC6B796005D4BFB /* ML */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2558,6 +2634,7 @@
 		0074FE6A1FB93ACB0042F460 /* CG_CGKik+Swift */ = {
 			isa = PBXGroup;
 			children = (
+				0058B35B1FC57C9C00E0D5D9 /* CGDefinesHeader */,
 				0074FE6B1FB93ACB0042F460 /* Extension */,
 				0074FE6E1FB93ACB0042F460 /* UIView */,
 				0074FE7F1FB93ACB0042F460 /* CGKit+Swift+BridgingHeader */,
@@ -2570,22 +2647,16 @@
 		0074FE6B1FB93ACB0042F460 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0074FE6C1FB93ACB0042F460 /* UIView */,
+				00578FE41FC69817005D4BFB /* TouchesPressesAndGestures  */,
+				00578FE11FC697BD005D4BFB /* ViewsAndControls */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		0074FE6C1FB93ACB0042F460 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				0074FE6D1FB93ACB0042F460 /* CGLabelExtension.swift */,
-			);
-			path = UIView;
 			sourceTree = "<group>";
 		};
 		0074FE6E1FB93ACB0042F460 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				0058B3591FC57C7D00E0D5D9 /* ImageView */,
 				0074FE6F1FB93ACB0042F460 /* UILabel */,
 				0074FE721FB93ACB0042F460 /* UIView */,
 				0074FE791FB93ACB0042F460 /* UITableView */,
@@ -3626,36 +3697,17 @@
 		0074FFD31FB93ACC0042F460 /* AddConstraint */ = {
 			isa = PBXGroup;
 			children = (
-				0074FFD41FB93ACC0042F460 /* NSArray+CGAddConstraints.h */,
-				0074FFD51FB93ACC0042F460 /* SetupSubviews */,
-				0074FFDB1FB93ACC0042F460 /* UIView+CGConstraintsManager.m */,
-				0074FFDC1FB93ACC0042F460 /* UIView+CGAddConstraints.m */,
-				0074FFDD1FB93ACC0042F460 /* UIView+CGAddConstraintStatus.h */,
-				0074FFDE1FB93ACC0042F460 /* NSArray+CGAddConstraints.m */,
-				0074FFDF1FB93ACC0042F460 /* UIView+CGConstraintsManager.h */,
-				0074FFE01FB93ACC0042F460 /* UIView+CGAddConstraintStatus.m */,
-				0074FFE11FB93ACC0042F460 /* UIView+CGAddConstraints.h */,
+				008C711D1FBACBF100305190 /* SetupSubviews */,
+				008C71181FBACBCC00305190 /* NSArray+CGAddConstraints.h */,
+				008C71171FBACBCA00305190 /* NSArray+CGAddConstraints.m */,
+				008C71121FBACBC800305190 /* UIView+CGAddConstraints.h */,
+				008C71111FBACBC800305190 /* UIView+CGAddConstraints.m */,
+				008C71131FBACBC900305190 /* UIView+CGAddConstraintStatus.h */,
+				008C71161FBACBCA00305190 /* UIView+CGAddConstraintStatus.m */,
+				008C71141FBACBC900305190 /* UIView+CGConstraintsManager.h */,
+				008C71151FBACBCA00305190 /* UIView+CGConstraintsManager.m */,
 			);
 			path = AddConstraint;
-			sourceTree = "<group>";
-		};
-		0074FFD51FB93ACC0042F460 /* SetupSubviews */ = {
-			isa = PBXGroup;
-			children = (
-				0074FFD61FB93ACC0042F460 /* UIView+CGAddConstraintsForSubviews.m */,
-				0074FFD71FB93ACC0042F460 /* Appearance */,
-				0074FFDA1FB93ACC0042F460 /* UIView+CGAddConstraintsForSubviews.h */,
-			);
-			path = SetupSubviews;
-			sourceTree = "<group>";
-		};
-		0074FFD71FB93ACC0042F460 /* Appearance */ = {
-			isa = PBXGroup;
-			children = (
-				0074FFD81FB93ACC0042F460 /* CGTwoSubviewsConstraintsAppearance.h */,
-				0074FFD91FB93ACC0042F460 /* CGTwoSubviewsConstraintsAppearance.m */,
-			);
-			path = Appearance;
 			sourceTree = "<group>";
 		};
 		0074FFE21FB93ACC0042F460 /* Header Type */ = {
@@ -3665,6 +3717,7 @@
 				0074FFE41FB93ACC0042F460 /* CGLayoutDefines.h */,
 				0074FFE51FB93ACC0042F460 /* CGSearchConstraintTypeHeader.h */,
 				0074FFE61FB93ACC0042F460 /* CGLayoutConstraintsTypeHeader.h */,
+				001EA5C01FBD242300956E2F /* CGLayoutAnchorConstraintsTypeHeader.h */,
 			);
 			path = "Header Type";
 			sourceTree = "<group>";
@@ -3769,6 +3822,7 @@
 				007402B51FB976360042F460 /* CGSwiftKit */,
 				0074FE151FB93ACA0042F460 /* CG_CGKit */,
 				0074FE131FB939DA0042F460 /* 1.jpg */,
+				0058B3551FC5631400E0D5D9 /* 笑脸.png */,
 				008253CC1FB5A7CB00AE3152 /* CGPhoto */,
 				008253E11FB5A7CC00AE3152 /* CGPhotoTests */,
 				008253EC1FB5A7CC00AE3152 /* CGPhotoUITests */,
@@ -3844,6 +3898,25 @@
 				008254021FB5B27B00AE3152 /* CGAssetCollectionModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		008C711D1FBACBF100305190 /* SetupSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				008C711F1FBACBF100305190 /* Appearance */,
+				008C711E1FBACBF100305190 /* UIView+CGAddConstraintsForSubviews.m */,
+				008C71221FBACBF100305190 /* UIView+CGAddConstraintsForSubviews.h */,
+			);
+			path = SetupSubviews;
+			sourceTree = "<group>";
+		};
+		008C711F1FBACBF100305190 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				008C71201FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.h */,
+				008C71211FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.m */,
+			);
+			path = Appearance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3953,6 +4026,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0058B3561FC5631500E0D5D9 /* 笑脸.png in Resources */,
 				008253D81FB5A7CC00AE3152 /* LaunchScreen.storyboard in Resources */,
 				0074FE141FB939DB0042F460 /* 1.jpg in Resources */,
 				008253D51FB5A7CC00AE3152 /* Assets.xcassets in Resources */,
@@ -4025,11 +4099,9 @@
 				007402381FB93ACE0042F460 /* CGWKWebViewUIDelegateManager.m in Sources */,
 				007402301FB93ACE0042F460 /* HorizontalSingleAppearance.m in Sources */,
 				007402E71FB976360042F460 /* CGURLSessionTaskDelegate.swift in Sources */,
-				0074021E1FB93ACE0042F460 /* UIView+CGAddConstraintStatus.m in Sources */,
 				007401EE1FB93ACE0042F460 /* UIView+CGAnimated.m in Sources */,
 				007401DD1FB93ACE0042F460 /* UIScrollView+CGSetupAppearance.m in Sources */,
 				007402821FB93ACF0042F460 /* CGAddSubviewsAppearance.m in Sources */,
-				0074FE121FB9351D0042F460 /* MLImageView.swift in Sources */,
 				0074025D1FB93ACF0042F460 /* CGRadioViewAppearance.m in Sources */,
 				007401B81FB93ACE0042F460 /* NSNotificationCenter+CGCreateNotification.m in Sources */,
 				007401FD1FB93ACE0042F460 /* UITableView+CGChangeGroupStyle.m in Sources */,
@@ -4049,13 +4121,15 @@
 				0074029E1FB93ACF0042F460 /* CGBrowsePhotoViewController.m in Sources */,
 				0074027F1FB93ACF0042F460 /* CGAlertView.m in Sources */,
 				0074018B1FB93ACD0042F460 /* CGCloseIconConfig.m in Sources */,
+				008C71191FBACBCD00305190 /* UIView+CGAddConstraints.m in Sources */,
 				0074019B1FB93ACD0042F460 /* CGAssetsFilterObject.m in Sources */,
-				0074021A1FB93ACE0042F460 /* CGTwoSubviewsConstraintsAppearance.m in Sources */,
 				007401C11FB93ACE0042F460 /* NSError+CGCreateError.m in Sources */,
 				007402011FB93ACE0042F460 /* UIButton+AreaCalculate.m in Sources */,
 				008254001FB5A86600AE3152 /* CGPhotoLibraryViewController.swift in Sources */,
+				00578FE31FC697BD005D4BFB /* CGLabelExtension.swift in Sources */,
 				007402471FB93ACE0042F460 /* CGInputAccessoryViewAppearance.m in Sources */,
 				007401AC1FB93ACE0042F460 /* UIView+CGLineMoveView.m in Sources */,
+				00578FEE1FC6B798005D4BFB /* MLImageGestureModel.swift in Sources */,
 				0074026B1FB93ACF0042F460 /* CGTitleImageLayoutView.m in Sources */,
 				007401AD1FB93ACE0042F460 /* UIView+CGScaleView.m in Sources */,
 				007402401FB93ACE0042F460 /* CGLabel.m in Sources */,
@@ -4076,6 +4150,7 @@
 				007401B51FB93ACE0042F460 /* NSObject+CGGetPrivateAPI.m in Sources */,
 				007401A31FB93ACE0042F460 /* CGTableViewProtocolBaseManager.swift in Sources */,
 				007401D51FB93ACE0042F460 /* NSDate+CGMLDateCategory.m in Sources */,
+				0058B35D1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift in Sources */,
 				007401801FB93ACD0042F460 /* CGTitlesSourceDataModel.m in Sources */,
 				007402E91FB976360042F460 /* CGURLSessionDelegateManager.swift in Sources */,
 				007401A81FB93ACE0042F460 /* Double+PriceCalculateRules.swift in Sources */,
@@ -4085,12 +4160,12 @@
 				007401FC1FB93ACE0042F460 /* UITableView+CGRegisterCell.m in Sources */,
 				0074028D1FB93ACF0042F460 /* UIViewController+InteractivePopEnable.m in Sources */,
 				007401951FB93ACD0042F460 /* CGFCManager.m in Sources */,
+				00578FE61FC6983E005D4BFB /* GesturesExtension.swift in Sources */,
 				007402931FB93ACF0042F460 /* CGNavigationController.m in Sources */,
 				007402ED1FB976360042F460 /* CGTaskRequestDataModel.swift in Sources */,
 				007401E61FB93ACE0042F460 /* UIView+CGAddSubview.m in Sources */,
 				007401F81FB93ACE0042F460 /* UITableView+CGReloadTableView.m in Sources */,
 				0074029B1FB93ACF0042F460 /* CGWebPrivateView.m in Sources */,
-				0074021C1FB93ACE0042F460 /* UIView+CGAddConstraints.m in Sources */,
 				0074019F1FB93ACE0042F460 /* CGInsetsLayoutLabel.swift in Sources */,
 				0074027B1FB93ACF0042F460 /* CGCycleViewCacheManager.m in Sources */,
 				007401821FB93ACD0042F460 /* CGWebViewConfig.m in Sources */,
@@ -4102,6 +4177,7 @@
 				007402181FB93ACE0042F460 /* NSLayoutConstraint+CGVerifyConstraint.m in Sources */,
 				0074022A1FB93ACE0042F460 /* CGBaseTextView.m in Sources */,
 				007402891FB93ACF0042F460 /* UIViewController+CGPushViewController.m in Sources */,
+				008C711C1FBACBCD00305190 /* NSArray+CGAddConstraints.m in Sources */,
 				007401AF1FB93ACE0042F460 /* UIView+CGSetupAnimationArea.m in Sources */,
 				007402691FB93ACF0042F460 /* CGDoubleTitleBaseView.m in Sources */,
 				007402361FB93ACE0042F460 /* UICollectionViewFlowLayout+CGCreateLayout.m in Sources */,
@@ -4128,6 +4204,7 @@
 				007401D21FB93ACE0042F460 /* CGRequestBaseModel+Category.m in Sources */,
 				007401C41FB93ACE0042F460 /* NSString+CGStrlen.m in Sources */,
 				007402241FB93ACE0042F460 /* CGTableViewEditDataSourceManager.m in Sources */,
+				00578FEC1FC6B798005D4BFB /* MLImageView.swift in Sources */,
 				007402351FB93ACE0042F460 /* CGBrowseImageCollectionViewFlowLayout.m in Sources */,
 				007401B71FB93ACE0042F460 /* NSNotification+CGKeyboardUserInfo.m in Sources */,
 				007401901FB93ACD0042F460 /* UIApplication+CGVerifyDeviceDirection.m in Sources */,
@@ -4212,14 +4289,15 @@
 				0074028B1FB93ACF0042F460 /* UINavigationController+CGSetupGestureRecognizer.m in Sources */,
 				007402411FB93ACE0042F460 /* CGMultilineLabel.m in Sources */,
 				007401CE1FB93ACE0042F460 /* UIImageView+CGSetupImageURL.m in Sources */,
-				0074019D1FB93ACD0042F460 /* CGLabelExtension.swift in Sources */,
 				0074024A1FB93ACE0042F460 /* CGCollectionViewCell.m in Sources */,
 				007402A21FB93ACF0042F460 /* CGScrollViewController.m in Sources */,
+				008C71241FBACBF200305190 /* CGTwoSubviewsConstraintsAppearance.m in Sources */,
 				007402761FB93ACF0042F460 /* CGCycleScrollView+CGCondition.m in Sources */,
 				007401BD1FB93ACE0042F460 /* CGDispathMethod.m in Sources */,
 				007402981FB93ACF0042F460 /* CGWebViewProgressView.m in Sources */,
 				007401E31FB93ACE0042F460 /* UIView+CGSetupAppearance.m in Sources */,
 				007402711FB93ACF0042F460 /* CGRoundProgressView.m in Sources */,
+				008C711A1FBACBCD00305190 /* UIView+CGConstraintsManager.m in Sources */,
 				0074028E1FB93ACF0042F460 /* UIViewController+CGFullscreenPopGesture.m in Sources */,
 				007402E51FB976360042F460 /* CGLocationManager.swift in Sources */,
 				0074029D1FB93ACF0042F460 /* CGTitleBarViewController.m in Sources */,
@@ -4230,18 +4308,17 @@
 				007401AB1FB93ACE0042F460 /* UIView+CGScaleViewFromOverlayView.m in Sources */,
 				007401B21FB93ACE0042F460 /* CGReachability.m in Sources */,
 				007402071FB93ACE0042F460 /* UIBarButtonItem+CGCreate.m in Sources */,
-				0074021B1FB93ACE0042F460 /* UIView+CGConstraintsManager.m in Sources */,
 				007401991FB93ACD0042F460 /* ALAssetsGroup+CGProperty.m in Sources */,
 				0074025A1FB93ACF0042F460 /* CGSelectorView.m in Sources */,
 				0074024C1FB93ACE0042F460 /* CGTimerButton.m in Sources */,
 				0074027A1FB93ACF0042F460 /* CGCycleContentView.m in Sources */,
-				007402191FB93ACE0042F460 /* UIView+CGAddConstraintsForSubviews.m in Sources */,
 				007401E91FB93ACE0042F460 /* UIView+CGFlowSubviewsSetup.m in Sources */,
 				007401C61FB93ACE0042F460 /* UIView+Constant.m in Sources */,
-				0074021D1FB93ACE0042F460 /* NSArray+CGAddConstraints.m in Sources */,
+				008C71231FBACBF200305190 /* UIView+CGAddConstraintsForSubviews.m in Sources */,
 				0074030C1FB9817F0042F460 /* UIImage+CGColor.m in Sources */,
 				007402171FB93ACE0042F460 /* NSLayoutConstraint+CGConstraint.m in Sources */,
 				007402631FB93ACF0042F460 /* CGRadioCollectionViewCell.m in Sources */,
+				008C711B1FBACBCD00305190 /* UIView+CGAddConstraintStatus.m in Sources */,
 				007401F31FB93ACE0042F460 /* UIWebView+CGValue.m in Sources */,
 				007401BC1FB93ACE0042F460 /* UIApplication+CGOpenSystemApp.m in Sources */,
 				007401A01FB93ACE0042F460 /* CGBaseFlowButtonsView.swift in Sources */,
@@ -4252,6 +4329,7 @@
 				007402A41FB93ACF0042F460 /* CGSingleTableViewController.m in Sources */,
 				0074018F1FB93ACD0042F460 /* UIApplication+CGVerificationRemoteNotification.m in Sources */,
 				007402751FB93ACF0042F460 /* CGCycleScrollView+CGScrollAnimation.m in Sources */,
+				00578FED1FC6B798005D4BFB /* MLImageViewConfig.swift in Sources */,
 				007402421FB93ACE0042F460 /* CGBaseLabel.m in Sources */,
 				007402121FB93ACE0042F460 /* NSArray+CGSearchConstraints.m in Sources */,
 				007402441FB93ACE0042F460 /* CGTextField.m in Sources */,

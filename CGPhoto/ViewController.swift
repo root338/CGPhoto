@@ -27,9 +27,13 @@ class ViewController: UIViewController {
     
     func test_addMLImageView() {
         
-        let image = UIImage.init(named: "1.jpg")
+        let image = UIImage.init(named: /*"笑脸.png"*/ "1.jpg")
         let imageView = MLImageView.init(image: image)
-        imageView.imageContentMode  = .bottom
+        imageView.imageContentMode          = .scaleAspectFit
+        imageView.isScrollEnable            = true
+        imageView.maximumZoomScale          = 10.0
+        imageView.minimumZoomScale          = 0.1
+        imageView.enableDoubleClickGestureRecognizer    = true
         
         self.view.addSubview(imageView)
         
