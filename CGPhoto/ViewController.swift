@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        test_addMLImageView()
+        test_addCGPhoto()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         imageView.maximumZoomScale          = 10.0
         imageView.minimumZoomScale          = 0.1
         imageView.enableDoubleClickGestureRecognizer    = true
+        imageView.enableLongPressGestureRecognizer      = true
         
         self.view.addSubview(imageView)
         
@@ -42,10 +43,7 @@ class ViewController: UIViewController {
     
     func test_addCGPhoto() {
         
-        let result = PHAsset.fetchAssets(with: nil)
-        result.enumerateObjects { (asset, idx, pointer) in
-            
-        }
+        
     }
 }
 

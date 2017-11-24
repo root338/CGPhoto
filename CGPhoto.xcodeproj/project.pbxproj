@@ -12,6 +12,8 @@
 		00578FEC1FC6B798005D4BFB /* MLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FE81FC6B796005D4BFB /* MLImageView.swift */; };
 		00578FED1FC6B798005D4BFB /* MLImageViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FEA1FC6B796005D4BFB /* MLImageViewConfig.swift */; };
 		00578FEE1FC6B798005D4BFB /* MLImageGestureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FEB1FC6B796005D4BFB /* MLImageGestureModel.swift */; };
+		00578FF51FC81680005D4BFB /* CGPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FF41FC81680005D4BFB /* CGPhotoCollectionViewController.swift */; };
+		00578FF71FC8173D005D4BFB /* CGPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00578FF61FC8173D005D4BFB /* CGPhotoCollectionView.swift */; };
 		0058B3561FC5631500E0D5D9 /* 笑脸.png in Resources */ = {isa = PBXBuildFile; fileRef = 0058B3551FC5631400E0D5D9 /* 笑脸.png */; };
 		0058B35D1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0058B35C1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift */; };
 		007401801FB93ACD0042F460 /* CGTitlesSourceDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074FE1A1FB93ACA0042F460 /* CGTitlesSourceDataModel.m */; };
@@ -367,6 +369,8 @@
 		00578FE81FC6B796005D4BFB /* MLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLImageView.swift; sourceTree = "<group>"; };
 		00578FEA1FC6B796005D4BFB /* MLImageViewConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLImageViewConfig.swift; sourceTree = "<group>"; };
 		00578FEB1FC6B796005D4BFB /* MLImageGestureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLImageGestureModel.swift; sourceTree = "<group>"; };
+		00578FF41FC81680005D4BFB /* CGPhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		00578FF61FC8173D005D4BFB /* CGPhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoCollectionView.swift; sourceTree = "<group>"; };
 		0058B3551FC5631400E0D5D9 /* 笑脸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "笑脸.png"; sourceTree = "<group>"; };
 		0058B35C1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDefinesEnumHeader.swift; sourceTree = "<group>"; };
 		007400001FB93ACC0042F460 /* CGTableViewDataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGTableViewDataSourceManager.m; sourceTree = "<group>"; };
@@ -2386,6 +2390,7 @@
 			isa = PBXGroup;
 			children = (
 				00578FE71FC6B796005D4BFB /* ML */,
+				00578FF61FC8173D005D4BFB /* CGPhotoCollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3888,6 +3893,7 @@
 			isa = PBXGroup;
 			children = (
 				008253FF1FB5A86600AE3152 /* CGPhotoLibraryViewController.swift */,
+				00578FF41FC81680005D4BFB /* CGPhotoCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4071,6 +4077,7 @@
 				0074026C1FB93ACF0042F460 /* CGTitleTextView.m in Sources */,
 				007402541FB93ACF0042F460 /* CGTitleBaseView.m in Sources */,
 				007402641FB93ACF0042F460 /* CGTitleRadioView.m in Sources */,
+				00578FF71FC8173D005D4BFB /* CGPhotoCollectionView.swift in Sources */,
 				007402F41FB976360042F460 /* CGDictionaryExtension.swift in Sources */,
 				007402281FB93ACE0042F460 /* CGRefreshBaseView.m in Sources */,
 				007401B91FB93ACE0042F460 /* CGKeyboardManager.m in Sources */,
@@ -4254,6 +4261,7 @@
 				007402901FB93ACF0042F460 /* UIViewController+CGSearchNavigationController.m in Sources */,
 				007402E61FB976360042F460 /* CGURLSessionManagerConfiguration.swift in Sources */,
 				007402161FB93ACE0042F460 /* UIView+CGCreateConstraint.m in Sources */,
+				00578FF51FC81680005D4BFB /* CGPhotoCollectionViewController.swift in Sources */,
 				007402571FB93ACF0042F460 /* CGBaseSelectorView.m in Sources */,
 				007401C21FB93ACE0042F460 /* NSString+CGEncryption.m in Sources */,
 				007402E81FB976360042F460 /* CGURLTaskManager.swift in Sources */,

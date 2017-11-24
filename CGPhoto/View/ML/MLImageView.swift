@@ -157,10 +157,6 @@ extension MLImageView {
         self.scrollView.zoom(to: rect, animated: animated)
     }
     
-    func setZoomScale(_ scale: CGFloat, animated: Bool) {
-        self.scrollView.setZoomScale(scale, animated: animated)
-    }
-    
     //MARK:- 初始化方法
     convenience init(image: UIImage?) {
         
@@ -215,8 +211,18 @@ fileprivate extension MLImageView {
         
         let contentOffset = imageViewPoints.contentOffset
         
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
-            self.imageView.frame = .init(origin: imageViewPoints.imageViewPoint, size: imageViewSize)
+        let imageViewFrame  = CGRect.init(origin: imageViewPoints.imageViewPoint, size: imageViewSize)
+        var duration        = 0.3
+        if self.imageView.frame == CGRect.zero {
+            
+            duration                = 0
+            self.imageView.frame    = imageViewFrame
+        }
+        
+        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseInOut, animations: {
+            if !self.imageView.frame.equalTo(imageViewFrame) {
+                self.imageView.frame = imageViewFrame
+            }
         }) { (finishes) in
             self.resetImageViewScrollArea(contentSize: contentSize, contentOffset: contentOffset)
         }
@@ -230,7 +236,15 @@ fileprivate extension MLImageView {
         
     }
     
+    ///
+    
     /// 计算imageView自身大小相对于指定大小，在不同加载类型下的坐标
+    ///
+    /// - Parameters:
+    ///   - targetContentMode: imageView 加载的类型
+    ///   - imageViewSize: 图片的大小
+    ///   - targetSize: 固定的目标大小
+    /// - Returns: 返回一个元祖 (imageViewPoint: 图片的坐标, contentOffset: scrollView 需要偏移的坐标)
     func calculateImageViewPoint(targetContentMode: UIViewContentMode, imageViewSize: CGSize, targetSize: CGSize) -> (imageViewPoint: CGPoint, contentOffset: CGPoint) {
         
         let minX = (targetSize.width - imageViewSize.width) / 2.0
@@ -275,8 +289,17 @@ fileprivate extension MLImageView {
             x = minX
             y = minY
         case .scaleToFill:
-            x = zeroX
-            y = zeroY
+            
+            if imageViewSize.width == targetSize.width {
+                // 在.scaleToFill类型下 imageViewSize == targetSize 所以只判断一个值来处理
+                x = zeroX
+                y = zeroY
+            }else {
+                // 在缩放的过程中 targetSize 也许不会与视图等同，所以指定在 .scaleToFill 加载类型下 使用居中的类型处理
+                x = minX
+                y = minY
+            }
+            
         case .scaleAspectFit:
             fallthrough
         case .scaleAspectFill:
@@ -288,8 +311,9 @@ fileprivate extension MLImageView {
                 x = minX
                 y = zeroY
             }else {
-                x = (targetSize.width - imageViewSize.width) / 2.0
-                y = (targetSize.height - imageViewSize.height) / 2.0
+                // 在缩放的过程中 targetSize 也许不会与视图等同，所以指定在 .scaleAspectFit .scaleAspectFill 加载类型下 使用居中的类型处理
+                x = minX
+                y = minY
             }
         case .redraw:
             break
@@ -354,12 +378,6 @@ extension MLImageView: UIScrollViewDelegate {
         self.setupImageViewPoint()
     }
     
-//    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-//        if view != nil {
-//            self.resetImageViewScrollArea(contentSize: view!.size, contentOffset: scrollView.contentOffset)
-//        }
-//    }
-    
     func setupImageViewPoint() {
         
         let contentSize     = CGSize.init(width: max(self.scrollView.contentSize.width, self.scrollView.width), height: max(self.scrollView.contentSize.height, self.scrollView.height))
@@ -375,26 +393,6 @@ extension MLImageView: UIScrollViewDelegate {
         self.imageView.origin   = imageViewPoint
     }
     
-    func getCenterPoint(points: [CGPoint]) -> CGPoint? {
-        var centerPoint = points.first
-        for (index, point) in points.enumerated() {
-            if index == 0 {
-                continue
-            }else {
-                
-                centerPoint = CGPoint.cg_centerPoint(point1: point, point2: centerPoint!)
-            }
-        }
-        return centerPoint
-    }
-    
-    func getCenterPoint(gesture: UIGestureRecognizer,in view: UIView?) ->CGPoint? {
-        var points = [CGPoint]()
-        for i in 0 ..< gesture.numberOfTouches {
-            points.append(gesture.location(ofTouch: i, in: view))
-        }
-        return self.getCenterPoint(points: points)
-    }
 }
 
 // MARK: - 手势添加移除处理
@@ -429,6 +427,10 @@ fileprivate extension MLImageView {
             case .longPress:    // 长按
                 
                 let longPressGestureRecognizer  = UILongPressGestureRecognizer.init(target: self, action: #selector(handle(longPressGestureRecognizer:)))
+                longPressGestureRecognizer.allowableMovement    = imageViewConfig.allowableMovement
+                longPressGestureRecognizer.minimumPressDuration = imageViewConfig.minimumLongPressDuration
+                longPressGestureRecognizer.numberOfTapsRequired = 0
+                longPressGestureRecognizer.numberOfTouchesRequired  = 1
                 gestureRecognizers  = longPressGestureRecognizer
                 
             }
@@ -479,6 +481,12 @@ fileprivate extension MLImageView {
     
     @objc private func handle(longPressGestureRecognizer: UILongPressGestureRecognizer) {
         
+        let state = longPressGestureRecognizer.state
+        guard state == .began else {
+            // 只有在才识别到时才触发功能，移动，结束等其他状态都不进行处理
+            return
+        }
+        
         guard ((self.delegate?.imageView(self, longPressGestureRecognizer: longPressGestureRecognizer)) == nil) else {
             return
         }
@@ -486,11 +494,16 @@ fileprivate extension MLImageView {
         self.handle(style: .longPress, targetGestureRecognizer: longPressGestureRecognizer, tool: imageViewConfig.defalutLongPressTool)
     }
     
+}
+
+// MARK: - 默认手势功能
+fileprivate extension MLImageView {
+    
     func handle(style: CGGestureRecognizerStyle, targetGestureRecognizer: UIGestureRecognizer, tool: MLImageViewToolType) {
         
         switch tool {
         case .zoom:
-            let point = targetGestureRecognizer.location(in: self.scrollView)
+            let point = targetGestureRecognizer.location(in: self)
             self.handleImageViewZoomScale(zoomScaleCenter: point)
         case .actionSheet:
             self.handleShowActionSheet()
@@ -506,7 +519,15 @@ fileprivate extension MLImageView {
         
         if self.scrollView.zoomScale == 1 {
             
+            var zoomScale = imageViewConfig.defalutZoomScale
+            if zoomScale <= 0 || zoomScale > self.maximumZoomScale {
+                zoomScale   = self.maximumZoomScale
+            }
             
+            let zoomRect = self.zoomRect(scale: zoomScale, targetPoint: zoomScaleCenter, originSize: self.imageView.size)
+            self.zoom(to: zoomRect, animated: !imageViewConfig.hideZoomScaleAnimated)
+            
+            self.scrollView.zoomScale = zoomScale
         }else {
             
             self.resetImageViewLayout()
@@ -515,6 +536,30 @@ fileprivate extension MLImageView {
     
     /// 处理显示操作表
     func handleShowActionSheet() {
+        print("\(MLImageView.self) 长按已生效")
+    }
+    
+    func setZoomScale(_ scale: CGFloat, animated: Bool) {
+        self.scrollView.setZoomScale(scale, animated: animated)
+    }
+    
+    /// 计算缩放的区域
+    ///
+    /// - Parameters:
+    ///   - scale: 缩放的比例
+    ///   - targetPoint: 目标坐标,需要MLImageView内的坐标系
+    ///   - originSize: 需要缩放的大小
+    /// - Returns: 返回指定缩放比例下的CGRect
+    func zoomRect(scale: CGFloat, targetPoint: CGPoint, originSize: CGSize) ->CGRect {
         
+        // 计算目标视图缩放后的大小
+        let width   = originSize.width / scale
+        let height  = originSize.height / scale
+        
+        let x = max(targetPoint.x - targetPoint.x / scale, 0)
+        let y = max(targetPoint.y - targetPoint.y / scale, 0)
+        
+        let zoomRect    = CGRect.init(x: x, y: y, width: width, height: height)
+        return zoomRect
     }
 }

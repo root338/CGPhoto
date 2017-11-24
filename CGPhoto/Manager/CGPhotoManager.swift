@@ -39,7 +39,7 @@ class CGPhotoManager: NSObject {
     //MARK:- 相册处理
     func photoCollection() -> PHFetchResult<PHAssetCollection> {
         
-        let fetchResult = PHAssetCollection.fetchAssetCollections(with: PHAssetCollectionType.smartAlbum, subtype: .any, options: nil)
+        let fetchResult = PHAssetCollection.fetchAssetCollections(with: PHAssetCollectionType.album, subtype: .any, options: nil)
         return fetchResult
     }
     

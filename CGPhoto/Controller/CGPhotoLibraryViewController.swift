@@ -8,6 +8,7 @@
 
 import UIKit
 
-class CGPhotoLibraryViewController: NSObject {
-
+class CGPhotoLibraryViewController: UIViewController {
+    
+    
 }
