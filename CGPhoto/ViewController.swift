@@ -43,7 +43,30 @@ class ViewController: UIViewController {
     
     func test_addCGPhoto() {
         
+        let clickButton = UIButton.init(type: .system)
+        clickButton.setTitle("Go Photo Controller >>", for: .normal)
+        self.view.addSubview(clickButton)
+        clickButton.addTarget(self, action: #selector(handlePushPhotoViewController(sender:)), for: .touchUpInside)
         
+        if #available(iOS 9.0, *) {
+            
+            _ = clickButton.cg_constraint(type1: .leading, targetView: self.view, type2: .leading, relation: .equal, multiplier: 1, constant: 15)
+            _ = clickButton.cg_constraint(type1: .trailing, targetView: self.view, type2: .trailing, relation: .lessThanOrEqual, multiplier: 1, constant: 15)
+            _ = clickButton.cg_y_constraint(anthorType1: .top, targetView: self.view, anthorType2: .top, relation: .equal, constant: 15)
+            
+//            _ = clickButton.cg_x_constraint(anthorType1: .leading, targetView: self.view, anthorType2: .leading, relation: .lessThanOrEqual, constant: 15)
+//            _ = clickButton.cg_x_constraint(anthorType1: .trailing, targetView: self.view, anthorType2: .trailing, relation: .lessThanOrEqual, constant: 15)
+//            _ = clickButton.cg_y_constraint(anthorType1: .top, targetView: self.view, anthorType2: .top, relation: .equal, constant: 15)
+        } else {
+            // Fallback on earlier versions
+        }
+        
+    }
+    
+    @objc func handlePushPhotoViewController(sender: Any) {
+        
+        let photoCollectionVC = CGPhotoCollectionViewController.init()
+        self.navigationController?.pushViewController(photoCollectionVC, animated: true)
     }
 }
 

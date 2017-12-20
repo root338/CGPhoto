@@ -327,6 +327,17 @@
 		007403111FB9817F0042F460 /* UIImage+CGScaleImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 007403081FB9817D0042F460 /* UIImage+CGScaleImageSize.m */; };
 		007403121FB9817F0042F460 /* UIImage+CGLoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074030A1FB9817E0042F460 /* UIImage+CGLoadImage.m */; };
 		0074FE141FB939DB0042F460 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0074FE131FB939DA0042F460 /* 1.jpg */; };
+		007766BD1FCFFBD300398F95 /* CGPhotoCollectionListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766BC1FCFFBD300398F95 /* CGPhotoCollectionListProtocol.swift */; };
+		007766BF1FD007C500398F95 /* CGPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766BE1FD007C500398F95 /* CGPhotoCollectionViewCell.swift */; };
+		007766C11FD00A7600398F95 /* CGPhotoLibrarySettingConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766C01FD00A7600398F95 /* CGPhotoLibrarySettingConfig.swift */; };
+		007766C31FD00BB800398F95 /* CGPhotoCollectionViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766C21FD00BB800398F95 /* CGPhotoCollectionViewConfig.swift */; };
+		007766CD1FD0F56500398F95 /* CGViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766C71FD0F56400398F95 /* CGViewLayout.swift */; };
+		007766CE1FD0F56500398F95 /* CGLayoutDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766C91FD0F56400398F95 /* CGLayoutDefines.swift */; };
+		007766CF1FD0F56500398F95 /* CGViewLayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766CA1FD0F56400398F95 /* CGViewLayoutConstraints.swift */; };
+		007766D01FD0F56500398F95 /* CGViewLayoutTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007766CC1FD0F56400398F95 /* CGViewLayoutTool.swift */; };
+		00799BD91FD8D00E00121A44 /* CGAssetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00799BD81FD8D00E00121A44 /* CGAssetCollectionViewCell.swift */; };
+		00799BDB1FD8D0AB00121A44 /* CGAssetCollectionListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00799BDA1FD8D0AB00121A44 /* CGAssetCollectionListProtocol.swift */; };
+		008096DD1FCBA49A005EEE4C /* CGCollectionProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008096DC1FCBA499005EEE4C /* CGCollectionProtocolManager.swift */; };
 		008253CE1FB5A7CB00AE3152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008253CD1FB5A7CB00AE3152 /* AppDelegate.swift */; };
 		008253D01FB5A7CB00AE3152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008253CF1FB5A7CB00AE3152 /* ViewController.swift */; };
 		008253D31FB5A7CC00AE3152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008253D11FB5A7CC00AE3152 /* Main.storyboard */; };
@@ -343,6 +354,11 @@
 		008C711C1FBACBCD00305190 /* NSArray+CGAddConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C71171FBACBCA00305190 /* NSArray+CGAddConstraints.m */; };
 		008C71231FBACBF200305190 /* UIView+CGAddConstraintsForSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C711E1FBACBF100305190 /* UIView+CGAddConstraintsForSubviews.m */; };
 		008C71241FBACBF200305190 /* CGTwoSubviewsConstraintsAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 008C71211FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.m */; };
+		0097AFB21FCFE53700D1DCD5 /* CGPhotoFetchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0097AFB11FCFE53700D1DCD5 /* CGPhotoFetchOptions.swift */; };
+		00B797241FD79302001F5068 /* UICollectionViewFlowLayout+CGCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B797231FD79302001F5068 /* UICollectionViewFlowLayout+CGCreate.swift */; };
+		00BA4C971FD69E50009FCA67 /* CGPHPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA4C961FD69E50009FCA67 /* CGPHPhotoViewController.swift */; };
+		00BA4C991FD69EED009FCA67 /* CGPHPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BA4C981FD69EED009FCA67 /* CGPHPhotoView.swift */; };
+		00D46CAD1FD53B89004077A9 /* CGPhotoFetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D46CAC1FD53B89004077A9 /* CGPhotoFetchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1027,6 +1043,17 @@
 		0074FFFC1FB93ACC0042F460 /* CGSingleSectionTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSingleSectionTableViewDataSource.m; sourceTree = "<group>"; };
 		0074FFFE1FB93ACC0042F460 /* CGTableViewDataSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTableViewDataSourceManager.h; sourceTree = "<group>"; };
 		0074FFFF1FB93ACC0042F460 /* CGTableViewEditDataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGTableViewEditDataSourceManager.m; sourceTree = "<group>"; };
+		007766BC1FCFFBD300398F95 /* CGPhotoCollectionListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoCollectionListProtocol.swift; sourceTree = "<group>"; };
+		007766BE1FD007C500398F95 /* CGPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		007766C01FD00A7600398F95 /* CGPhotoLibrarySettingConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoLibrarySettingConfig.swift; sourceTree = "<group>"; };
+		007766C21FD00BB800398F95 /* CGPhotoCollectionViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoCollectionViewConfig.swift; sourceTree = "<group>"; };
+		007766C71FD0F56400398F95 /* CGViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGViewLayout.swift; sourceTree = "<group>"; };
+		007766C91FD0F56400398F95 /* CGLayoutDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGLayoutDefines.swift; sourceTree = "<group>"; };
+		007766CA1FD0F56400398F95 /* CGViewLayoutConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGViewLayoutConstraints.swift; sourceTree = "<group>"; };
+		007766CC1FD0F56400398F95 /* CGViewLayoutTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGViewLayoutTool.swift; sourceTree = "<group>"; };
+		00799BD81FD8D00E00121A44 /* CGAssetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAssetCollectionViewCell.swift; sourceTree = "<group>"; };
+		00799BDA1FD8D0AB00121A44 /* CGAssetCollectionListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAssetCollectionListProtocol.swift; sourceTree = "<group>"; };
+		008096DC1FCBA499005EEE4C /* CGCollectionProtocolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGCollectionProtocolManager.swift; sourceTree = "<group>"; };
 		008253CA1FB5A7CB00AE3152 /* CGPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008253CD1FB5A7CB00AE3152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008253CF1FB5A7CB00AE3152 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -1055,6 +1082,11 @@
 		008C71201FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGTwoSubviewsConstraintsAppearance.h; sourceTree = "<group>"; };
 		008C71211FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGTwoSubviewsConstraintsAppearance.m; sourceTree = "<group>"; };
 		008C71221FBACBF100305190 /* UIView+CGAddConstraintsForSubviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGAddConstraintsForSubviews.h"; sourceTree = "<group>"; };
+		0097AFB11FCFE53700D1DCD5 /* CGPhotoFetchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoFetchOptions.swift; sourceTree = "<group>"; };
+		00B797231FD79302001F5068 /* UICollectionViewFlowLayout+CGCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+CGCreate.swift"; sourceTree = "<group>"; };
+		00BA4C961FD69E50009FCA67 /* CGPHPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPHPhotoViewController.swift; sourceTree = "<group>"; };
+		00BA4C981FD69EED009FCA67 /* CGPHPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPHPhotoView.swift; sourceTree = "<group>"; };
+		00D46CAC1FD53B89004077A9 /* CGPhotoFetchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPhotoFetchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2351,6 +2383,8 @@
 		007402DB1FB976360042F460 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00BA4C9A1FD6A017009FCA67 /* Create */,
+				007766C51FD0F56400398F95 /* Layout */,
 				0058B3581FC57C5700E0D5D9 /* CGDefinesHeader */,
 				007402DC1FB976360042F460 /* UIView */,
 			);
@@ -2360,6 +2394,7 @@
 		007402DC1FB976360042F460 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				00B797251FD79430001F5068 /* BaseView */,
 				0058B3571FC57BBA00E0D5D9 /* ImageView */,
 				007402DD1FB976360042F460 /* BrowseView */,
 				007402E21FB976360042F460 /* LineView */,
@@ -2391,6 +2426,9 @@
 			children = (
 				00578FE71FC6B796005D4BFB /* ML */,
 				00578FF61FC8173D005D4BFB /* CGPhotoCollectionView.swift */,
+				007766BE1FD007C500398F95 /* CGPhotoCollectionViewCell.swift */,
+				00BA4C981FD69EED009FCA67 /* CGPHPhotoView.swift */,
+				00799BD81FD8D00E00121A44 /* CGAssetCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3821,6 +3859,41 @@
 			path = DataSourceManager;
 			sourceTree = "<group>";
 		};
+		007766C51FD0F56400398F95 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				007766CB1FD0F56400398F95 /* Tool */,
+				007766C61FD0F56400398F95 /* CreateConstraints */,
+				007766C81FD0F56400398F95 /* Defines */,
+				007766CA1FD0F56400398F95 /* CGViewLayoutConstraints.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		007766C61FD0F56400398F95 /* CreateConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				007766C71FD0F56400398F95 /* CGViewLayout.swift */,
+			);
+			path = CreateConstraints;
+			sourceTree = "<group>";
+		};
+		007766C81FD0F56400398F95 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				007766C91FD0F56400398F95 /* CGLayoutDefines.swift */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		007766CB1FD0F56400398F95 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				007766CC1FD0F56400398F95 /* CGViewLayoutTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		008253C11FB5A7CB00AE3152 = {
 			isa = PBXGroup;
 			children = (
@@ -3894,6 +3967,7 @@
 			children = (
 				008253FF1FB5A86600AE3152 /* CGPhotoLibraryViewController.swift */,
 				00578FF41FC81680005D4BFB /* CGPhotoCollectionViewController.swift */,
+				00BA4C961FD69E50009FCA67 /* CGPHPhotoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3902,6 +3976,13 @@
 			isa = PBXGroup;
 			children = (
 				008254021FB5B27B00AE3152 /* CGAssetCollectionModel.swift */,
+				008096DC1FCBA499005EEE4C /* CGCollectionProtocolManager.swift */,
+				0097AFB11FCFE53700D1DCD5 /* CGPhotoFetchOptions.swift */,
+				007766BC1FCFFBD300398F95 /* CGPhotoCollectionListProtocol.swift */,
+				007766C01FD00A7600398F95 /* CGPhotoLibrarySettingConfig.swift */,
+				007766C21FD00BB800398F95 /* CGPhotoCollectionViewConfig.swift */,
+				00D46CAC1FD53B89004077A9 /* CGPhotoFetchResult.swift */,
+				00799BDA1FD8D0AB00121A44 /* CGAssetCollectionListProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3923,6 +4004,21 @@
 				008C71211FBACBF100305190 /* CGTwoSubviewsConstraintsAppearance.m */,
 			);
 			path = Appearance;
+			sourceTree = "<group>";
+		};
+		00B797251FD79430001F5068 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		00BA4C9A1FD6A017009FCA67 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				00B797231FD79302001F5068 /* UICollectionViewFlowLayout+CGCreate.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -4157,9 +4253,11 @@
 				007401B51FB93ACE0042F460 /* NSObject+CGGetPrivateAPI.m in Sources */,
 				007401A31FB93ACE0042F460 /* CGTableViewProtocolBaseManager.swift in Sources */,
 				007401D51FB93ACE0042F460 /* NSDate+CGMLDateCategory.m in Sources */,
+				007766CD1FD0F56500398F95 /* CGViewLayout.swift in Sources */,
 				0058B35D1FC57CB500E0D5D9 /* CGDefinesEnumHeader.swift in Sources */,
 				007401801FB93ACD0042F460 /* CGTitlesSourceDataModel.m in Sources */,
 				007402E91FB976360042F460 /* CGURLSessionDelegateManager.swift in Sources */,
+				00D46CAD1FD53B89004077A9 /* CGPhotoFetchResult.swift in Sources */,
 				007401A81FB93ACE0042F460 /* Double+PriceCalculateRules.swift in Sources */,
 				007401BF1FB93ACE0042F460 /* NSUserDefaults+CGMethodSave.m in Sources */,
 				007401F51FB93ACE0042F460 /* UICollectionView+CGDequeueReusableCell.m in Sources */,
@@ -4182,13 +4280,16 @@
 				007402481FB93ACE0042F460 /* CGBrowsePhotoCollectionViewCell.m in Sources */,
 				007401911FB93ACD0042F460 /* UIColor+ColorValueTransform.m in Sources */,
 				007402181FB93ACE0042F460 /* NSLayoutConstraint+CGVerifyConstraint.m in Sources */,
+				00799BD91FD8D00E00121A44 /* CGAssetCollectionViewCell.swift in Sources */,
 				0074022A1FB93ACE0042F460 /* CGBaseTextView.m in Sources */,
 				007402891FB93ACF0042F460 /* UIViewController+CGPushViewController.m in Sources */,
+				007766C31FD00BB800398F95 /* CGPhotoCollectionViewConfig.swift in Sources */,
 				008C711C1FBACBCD00305190 /* NSArray+CGAddConstraints.m in Sources */,
 				007401AF1FB93ACE0042F460 /* UIView+CGSetupAnimationArea.m in Sources */,
 				007402691FB93ACF0042F460 /* CGDoubleTitleBaseView.m in Sources */,
 				007402361FB93ACE0042F460 /* UICollectionViewFlowLayout+CGCreateLayout.m in Sources */,
 				007402371FB93ACE0042F460 /* CGCollectionViewFloatLayout.m in Sources */,
+				00BA4C991FD69EED009FCA67 /* CGPHPhotoView.swift in Sources */,
 				007402F71FB976360042F460 /* CGBrowseFullScreenView.swift in Sources */,
 				007402501FB93ACF0042F460 /* CGLineView.m in Sources */,
 				0074030D1FB9817F0042F460 /* UIImage+CGDrawImage.m in Sources */,
@@ -4206,6 +4307,7 @@
 				007401FE1FB93ACE0042F460 /* UITableView+SetupBackgroundView.m in Sources */,
 				007402961FB93ACF0042F460 /* CGNavigationBarViewController.m in Sources */,
 				007402261FB93ACE0042F460 /* CGSingleSectionBaseTableView.m in Sources */,
+				008096DD1FCBA49A005EEE4C /* CGCollectionProtocolManager.swift in Sources */,
 				007401CC1FB93ACE0042F460 /* NSBundle+GetAppInfo.m in Sources */,
 				007402F51FB976360042F460 /* CGStringExtension.swift in Sources */,
 				007401D21FB93ACE0042F460 /* CGRequestBaseModel+Category.m in Sources */,
@@ -4220,6 +4322,7 @@
 				007401F91FB93ACE0042F460 /* UITableView+CGScrolling.m in Sources */,
 				007402F11FB976360042F460 /* CGImageExtension.swift in Sources */,
 				007402EA1FB976360042F460 /* CGURLSessionManager.swift in Sources */,
+				00BA4C971FD69E50009FCA67 /* CGPHPhotoViewController.swift in Sources */,
 				007402F21FB976360042F460 /* CGPointExtension.swift in Sources */,
 				007401E21FB93ACE0042F460 /* UIView+CGViewCategory.m in Sources */,
 				007402321FB93ACE0042F460 /* CGBrowsePhotoListView.m in Sources */,
@@ -4232,6 +4335,7 @@
 				007402E41FB976360042F460 /* CGMapManager.swift in Sources */,
 				007402A71FB93ACF0042F460 /* CGDefaultPopAnimation.m in Sources */,
 				0074026F1FB93ACF0042F460 /* CGTitleTextFieldView.m in Sources */,
+				0097AFB21FCFE53700D1DCD5 /* CGPhotoFetchOptions.swift in Sources */,
 				007402951FB93ACF0042F460 /* CGBaseViewController.m in Sources */,
 				007402EF1FB976360042F460 /* CGTaskDataModel.swift in Sources */,
 				007402721FB93ACF0042F460 /* CGCycleBrowseImageScrollView+CGSetupCycleProperty.m in Sources */,
@@ -4267,6 +4371,7 @@
 				007402E81FB976360042F460 /* CGURLTaskManager.swift in Sources */,
 				0074030F1FB9817F0042F460 /* UIImage+CGImage.m in Sources */,
 				007402771FB93ACF0042F460 /* CGCycleScrollView+CGBuildLayout.m in Sources */,
+				007766BF1FD007C500398F95 /* CGPhotoCollectionViewCell.swift in Sources */,
 				007401C51FB93ACE0042F460 /* NSString+VerificationString.m in Sources */,
 				0074027E1FB93ACF0042F460 /* CGAlertArrowAppearance.m in Sources */,
 				007401E11FB93ACE0042F460 /* UIView+CGBorderLayer.m in Sources */,
@@ -4282,14 +4387,17 @@
 				0074026E1FB93ACF0042F460 /* CGTitleButtonContentView.m in Sources */,
 				007402651FB93ACF0042F460 /* CGLayoutMarginBaseView.m in Sources */,
 				007402061FB93ACE0042F460 /* UIImageView+CGCreate.m in Sources */,
+				00B797241FD79302001F5068 /* UICollectionViewFlowLayout+CGCreate.swift in Sources */,
 				007402151FB93ACE0042F460 /* CGViewConstraintsModel.m in Sources */,
 				007401A71FB93ACE0042F460 /* String+Extension.swift in Sources */,
 				007402991FB93ACF0042F460 /* CGWebViewToolBar.m in Sources */,
 				0074019A1FB93ACD0042F460 /* ALAsset+CGProperty.m in Sources */,
 				007402831FB93ACF0042F460 /* CGCreateViewsAppearance.m in Sources */,
+				007766CF1FD0F56500398F95 /* CGViewLayoutConstraints.swift in Sources */,
 				007402A81FB93ACF0042F460 /* CGNavigationViewControllerManager.m in Sources */,
 				007401D61FB93ACE0042F460 /* RFKeyboard.m in Sources */,
 				007401D91FB93ACE0042F460 /* UIView+CustomTableHeaderView.m in Sources */,
+				007766C11FD00A7600398F95 /* CGPhotoLibrarySettingConfig.swift in Sources */,
 				007401C81FB93ACE0042F460 /* NSPredicate+CreatePredicate.m in Sources */,
 				007402521FB93ACF0042F460 /* CGNavigationBarView.m in Sources */,
 				0074025F1FB93ACF0042F460 /* CGTitleRadioCellAppearance.m in Sources */,
@@ -4306,12 +4414,14 @@
 				007401E31FB93ACE0042F460 /* UIView+CGSetupAppearance.m in Sources */,
 				007402711FB93ACF0042F460 /* CGRoundProgressView.m in Sources */,
 				008C711A1FBACBCD00305190 /* UIView+CGConstraintsManager.m in Sources */,
+				007766CE1FD0F56500398F95 /* CGLayoutDefines.swift in Sources */,
 				0074028E1FB93ACF0042F460 /* UIViewController+CGFullscreenPopGesture.m in Sources */,
 				007402E51FB976360042F460 /* CGLocationManager.swift in Sources */,
 				0074029D1FB93ACF0042F460 /* CGTitleBarViewController.m in Sources */,
 				007401EC1FB93ACE0042F460 /* UIView+CGSearchView.m in Sources */,
 				0074022B1FB93ACE0042F460 /* CGTextView.m in Sources */,
 				007402921FB93ACF0042F460 /* CGBaseViewController+CGSetupItem.m in Sources */,
+				00799BDB1FD8D0AB00121A44 /* CGAssetCollectionListProtocol.swift in Sources */,
 				0074029C1FB93ACF0042F460 /* CGWebViewController.m in Sources */,
 				007401AB1FB93ACE0042F460 /* UIView+CGScaleViewFromOverlayView.m in Sources */,
 				007401B21FB93ACE0042F460 /* CGReachability.m in Sources */,
@@ -4346,6 +4456,7 @@
 				007402801FB93ACF0042F460 /* CGBorderObject.m in Sources */,
 				007403121FB9817F0042F460 /* UIImage+CGLoadImage.m in Sources */,
 				007402311FB93ACE0042F460 /* HorizontalSingleView.m in Sources */,
+				007766D01FD0F56500398F95 /* CGViewLayoutTool.swift in Sources */,
 				0074023F1FB93ACE0042F460 /* CGPlaceholderLabel.m in Sources */,
 				007402051FB93ACE0042F460 /* UITableView+CGCreateTableView.m in Sources */,
 				008253CE1FB5A7CB00AE3152 /* AppDelegate.swift in Sources */,
@@ -4387,6 +4498,7 @@
 				007401891FB93ACD0042F460 /* CGArrowIconConfig.m in Sources */,
 				0074023C1FB93ACE0042F460 /* NJKWebViewProgress.m in Sources */,
 				007402FB1FB976360042F460 /* CGFoulLineView.swift in Sources */,
+				007766BD1FCFFBD300398F95 /* CGPhotoCollectionListProtocol.swift in Sources */,
 				007402001FB93ACE0042F460 /* UIButton+CGSetupAppearance.m in Sources */,
 				007402611FB93ACF0042F460 /* CGRadioView.m in Sources */,
 				007402911FB93ACF0042F460 /* CGNavigationAppearance.m in Sources */,

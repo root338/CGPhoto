@@ -10,22 +10,26 @@ import UIKit
 
 class CGPhotoCollectionView: UIView {
 
-    fileprivate let collection : UICollectionView
+    let collectionView : UICollectionView
     
     override convenience init(frame: CGRect) {
         
-        let flowLayout = CGPhotoCollectionView.createPhotoCollectionViewFlowLayout(width: frame.size.width)
+        let width       = frame.size.width
+        let flowLayout  = UICollectionViewFlowLayout.init(itemSize: .init(width: width == 0 ? UIScreen.main.bounds.size.width : width, height: 50))
         self.init(frame: frame, layout: flowLayout)
     }
     
     init(frame: CGRect, layout: UICollectionViewLayout) {
         
-        collection = UICollectionView.init(frame: .init(origin: .zero, size: frame.size), collectionViewLayout: layout)
+        collectionView = UICollectionView.init(frame: .init(origin: .zero, size: frame.size), collectionViewLayout: layout)
         super.init(frame: frame)
         
-        self.addSubview(collection)
+        self.addSubview(collectionView)
         
         self.setupContentViewLayout()
+        
+        collectionView.register(CGPhotoCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(CGPhotoCollectionViewCell.self))
+        collectionView.backgroundColor  = UIColor.white
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,60 +38,11 @@ class CGPhotoCollectionView: UIView {
     
 }
 
-// MARK: - 对外接口属性设置
-extension CGPhotoCollectionView {
-    
-    class func createPhotoCollectionViewFlowLayout(width: CGFloat) ->UICollectionViewFlowLayout {
-        
-        let flowLayout  = UICollectionViewFlowLayout.init()
-        
-        flowLayout.minimumLineSpacing       = 2
-        flowLayout.minimumInteritemSpacing  = 2
-        
-        let count       = CGFloat(4)
-        let itemLength  = (width - (count - 1) * flowLayout.minimumInteritemSpacing) / count
-        
-        flowLayout.itemSize                 = CGSize.init(width: itemLength, height: itemLength)
-        flowLayout.scrollDirection          = .vertical
-        
-        return flowLayout
-    }
-    
-    var collectionViewLayout : UICollectionViewLayout {
-        set {
-            self.collection.setCollectionViewLayout(newValue, animated: true)
-        }
-        get {
-            return self.collection.collectionViewLayout
-        }
-    }
-    
-    weak var delegate : UICollectionViewDelegate? {
-        
-        set {
-            self.collection.delegate = newValue
-        }
-        get {
-            return self.collection.delegate
-        }
-    }
-    
-    weak var dataSource : UICollectionViewDataSource? {
-        set {
-            self.collection.dataSource  = newValue
-        }
-        get {
-            return self.collection.dataSource
-        }
-    }
-}
-
-
 // MARK: - 设置布局
 fileprivate extension CGPhotoCollectionView {
     
     func setupContentViewLayout() {
         
-        self.collection.cg_autoEdgesInsetsZeroToSuperview()
+        self.collectionView.cg_autoEdgesInsetsZeroToSuperview()
     }
 }
