@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CGAssetCollectionViewCell: UIView {
+/// 相片 cell
+class CGAssetCollectionViewCell: UICollectionViewCell {
 
     let imageView = UIImageView.init()
     
@@ -16,6 +17,8 @@ class CGAssetCollectionViewCell: UIView {
         super.init(frame: frame)
         
         self.addSubview(imageView)
+        
+        self.setupContentSubviews()
         
         self.setupContentSubviewsLayout()
     }
@@ -26,7 +29,12 @@ class CGAssetCollectionViewCell: UIView {
     
 }
 
-extension CGAssetCollectionViewCell {
+fileprivate extension CGAssetCollectionViewCell {
+    
+    func setupContentSubviews() {
+        
+        imageView.setupContentMode(.scaleAspectFill)
+    }
     
     func setupContentSubviewsLayout() {
         

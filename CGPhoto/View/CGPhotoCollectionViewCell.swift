@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// 相册列表 cell
 class CGPhotoCollectionViewCell: UICollectionViewCell {
     
     let imageView       = UIImageView.init()
@@ -40,6 +41,8 @@ extension CGPhotoCollectionViewCell {
         guard let config = CGPhotoLibrarySettingConfig.defalutConfig.photoCollectionConfig?.photoCollectionViewCellConfig else {
             
             photoTotalLabel.textColor   = UIColor.lightGray
+            imageView.setupContentMode(.scaleAspectFill)
+            
             return
         }
         

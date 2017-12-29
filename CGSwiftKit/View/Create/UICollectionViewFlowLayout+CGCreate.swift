@@ -13,20 +13,17 @@ extension UICollectionViewFlowLayout {
     convenience init(itemSize: CGSize) {
         self.init()
         
-        self.itemSize   = itemSize
+        self.itemSize           = itemSize
         self.scrollDirection    = .vertical
     }
     
-    convenience init(maxWidth: CGFloat, count: Int) {
-        self.init()
+    convenience init(itemSize: CGSize, sectionInset: UIEdgeInsets, minLineSpace: CGFloat, minInteritemSpace: CGFloat) {
         
-        let hSpace  = CGFloat(2)
-        let vSpace  = CGFloat(2)
+        self.init(itemSize: itemSize)
         
-        let length  = (maxWidth - (hSpace * CGFloat(count - 1))) / CGFloat(count)
-        
-        self.itemSize   = .init(width: length, height: length)
-        self.minimumInteritemSpacing    = hSpace
-        self.minimumLineSpacing         = vSpace
+        self.sectionInset               = sectionInset
+        self.minimumLineSpacing         = minLineSpace
+        self.minimumInteritemSpacing    = minInteritemSpace
     }
+    
 }

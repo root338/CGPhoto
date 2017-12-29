@@ -37,7 +37,7 @@ struct MLImageViewConfig {
     var hideZoomScaleAnimated = false
     
     //MARK:- 视图本身设置
-    /// 也许设置之后会改变视图的结构层次
+    /// 设置之后也许会改变视图的结构层次
     /// 禁止图片滑动
     var disableImageViewScroll  = false
     

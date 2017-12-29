@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CGPhotoCollectionViewController: UIViewController, CGPhotoCollectionListDelegate {
+class CGPhotoCollectionViewController: CGBaseViewController, CGPhotoCollectionListDelegate {
     
     fileprivate let photoCollectionView     = CGPhotoCollectionView.init()
     fileprivate let photoCollectionProtocol = CGPhotoCollectionListProtocol.init(cellIdentifier: NSStringFromClass(CGPhotoCollectionViewCell.self), delegate: nil)
@@ -22,19 +22,25 @@ class CGPhotoCollectionViewController: UIViewController, CGPhotoCollectionListDe
             
             self.view.addSubview(self.photoCollectionView)
             
+            photoCollectionView.cg_autoEdgesInsetsZero(toSuperviewExcludingEdge: .top)
             if #available(iOS 11.0, *) {
-                _ = self.photoCollectionView.cg_Layout(targetView: self.view, edgeOptions: .allEdge)
+                
+                _ = photoCollectionView.cg_Layout(targetView: self.view, edgeOptions: .top)
             } else {
                 // Fallback on earlier versions
-                self.photoCollectionView.cg_autoEdgesInsetsZero(to: self)
+                photoCollectionView.cg_topLayoutGuide(of: self)
             }
         }
         
-        self.photoCollectionView.collectionView.dataSource = photoCollectionProtocol
-        self.photoCollectionView.collectionView.delegate   = photoCollectionProtocol
+        photoCollectionProtocol.estimatedImageSize          = photoCollectionView.estimatedImageSize
+        photoCollectionProtocol.delegate                    = self
+        
+        self.photoCollectionView.collectionView.dataSource  = photoCollectionProtocol
+        self.photoCollectionView.collectionView.delegate    = photoCollectionProtocol
+        
+        self.photoCollectionView.collectionView.register(CGPhotoCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(CGPhotoCollectionViewCell.self))
         
         self.loadPhotoCollection()
-        self.view.backgroundColor   = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,5 +58,8 @@ class CGPhotoCollectionViewController: UIViewController, CGPhotoCollectionListDe
     //MARK:- CGPhotoCollectionListDelegate
     func photoCollectionList(obj: CGPhotoCollectionListProtocol, didSelectItemAt indexPath: IndexPath, assetCollection: CGPhotoCollectionModel?) {
         
+        let assetCollectionVC = CGPHPhotoViewController.init()
+        assetCollectionVC.assetCollectionDataSource = assetCollection
+        self.navigationController?.pushViewController(assetCollectionVC, animated: true)
     }
 }

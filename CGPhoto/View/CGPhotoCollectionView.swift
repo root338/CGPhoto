@@ -12,6 +12,13 @@ class CGPhotoCollectionView: UIView {
 
     let collectionView : UICollectionView
     
+    var estimatedImageSize : CGSize {
+        
+        return itemSize.scale()
+    }
+    
+    fileprivate var itemSize : CGSize
+    
     override convenience init(frame: CGRect) {
         
         let width       = frame.size.width
@@ -22,13 +29,18 @@ class CGPhotoCollectionView: UIView {
     init(frame: CGRect, layout: UICollectionViewLayout) {
         
         collectionView = UICollectionView.init(frame: .init(origin: .zero, size: frame.size), collectionViewLayout: layout)
+        if let flowLayout = layout as? UICollectionViewFlowLayout {
+            itemSize    = flowLayout.itemSize
+        }else {
+            itemSize    = CGSize.zero
+        }
+        
         super.init(frame: frame)
         
         self.addSubview(collectionView)
         
         self.setupContentViewLayout()
         
-        collectionView.register(CGPhotoCollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(CGPhotoCollectionViewCell.self))
         collectionView.backgroundColor  = UIColor.white
     }
     
